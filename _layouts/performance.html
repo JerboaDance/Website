@@ -11,6 +11,7 @@
             {% include nav.html %}
             
             <div class="performance-container">
+                <h1>{{ page.name }}</h1>
                 <p>{{ content }}</p>
                 <ul>
                 {% for show in page.shows %}
@@ -18,7 +19,7 @@
                         <ul>
                             <li><h2>{{show.dates}}</h2></li>
                             <li>{{show.location}}</li>
-                            <li>Company: {{show.company}}</li>
+                            <li>{% include castlist.html %}</li>
                         </ul>
                     </li>
                 {% endfor %}
