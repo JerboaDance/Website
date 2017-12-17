@@ -1,12 +1,13 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    background-color: #555555;
+    margin: 0px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    display:flex;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -19,25 +20,51 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
+.default-header {
+    display: grid;
+    grid-area: header;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    justify-items: center;
+    background-color: #FFFFFF;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.default-header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
 }
 
-ul.posts li {
-    list-style: none;
+.default-header h2 {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.default-nav {    
+    background-color: #a553ba;
+    grid-area: nav;
+}
+
+.default-container {
+    grid-area: content;
+}
+
+.default-footer {
+    grid-area: footer;
+}
+
+.default-wrapper {
+    margin: 0px auto;
+    width: 70%;
+    display: grid;
+    justify-items: stretch;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "footer";
 }
