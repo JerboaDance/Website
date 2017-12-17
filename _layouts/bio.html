@@ -11,8 +11,16 @@
                 {% include nav.html %}
                 
                 <div class="content">
+                    
+                    {% capture headshotpath %}/assets{{page.id}}.jpg{% endcapture %}
+                    {% assign headshot = site.static_files | where_exp:"static_file", "static_file.path == headshotpath" | first %}
+                    {% unless headshot %}
+                        {% assign headshotpath = "/assets/company/default.png" %}
+                    {% endunless %}
+
                     <h1>{{ page.name }}</h1>
                     <h2>{{ page.role }}</h2>
+                    <img src="{{headshotpath}}" alt="{{ page.name }}" />
                     <p>{{ content }}</p>
                 </div><!-- /.content -->
                 
