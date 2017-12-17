@@ -58,6 +58,7 @@ p {
 
 .default-footer {
     grid-area: footer;
+    background-color: #CCCCCC;
 }
 .default-footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
