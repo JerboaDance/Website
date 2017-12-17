@@ -1,0 +1,3 @@
+{% capture venuepath %}/venues/{{show.location}}{% endcapture %}
+{% assign venue = site.venues | where: "id", venuepath | first %}
+<div><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</div>

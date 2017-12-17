@@ -4,6 +4,9 @@ markdown: kramdown
 collections:
   company:
     output: true
+  performances:
+    output: true
+  venues:
 
 defaults:
   - scope:
@@ -13,3 +16,9 @@ defaults:
       layout: bio
       role: Dancer
       status: inactive
+  - scope:
+      path: ""
+      type: performances
+    values:
+      layout: performance
+      upcoming: false

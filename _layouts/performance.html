@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.name }}</title>
+        <!-- link to main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            {% include header.html %}
+            {% include nav.html %}
+            
+            <div class="content">
+                <h1>{{ page.name }}</h1>
+                {% if page.upcoming == true %}
+                    {% include buytickets.html %}
+                {% endif %}
+                <p>{{ content }}</p>
+                <ul>
+                {% for show in page.shows %}
+                    <li>
+                        <ul>
+                            <li><h2>{{show.dates}}</h2></li>
+                            <li>{% include venue.html %}</li>
+                            <li>{% include castlist.html %}</li>
+                        </ul>
+                    </li>
+                {% endfor %}
+                </ul>
+                <p>Videos and photographs go here</p>
+            </div><!-- /.content -->
+            
+            {% include footer.html %}
+
+        </div><!-- ./wrapper -->
+    </body>
+</html>

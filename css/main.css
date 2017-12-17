@@ -79,13 +79,7 @@ footer ul li {
         "footer";
 }
 
-.default-container {
-    grid-area: content;
-    display:grid;
-    justify-items: center;
-    background-color: #FFFFFF;
-}
-.bio-container {
+.content {
     grid-area: content;
     display:grid;
     justify-items: center;
