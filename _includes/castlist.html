@@ -3,6 +3,6 @@ Company:
     {% for personid in show.company %}
         {% capture personpath %}/company/{{personid}}{% endcapture %}
         {% assign person = site.company | where: "id", personpath | first %}
-        <li><a href="{{person.uri}}">{{ person.name }}</a></li>
+        <li><a href="{{person.url}}">{{ person.name }}</a></li>
     {% endfor %}
 </ul>

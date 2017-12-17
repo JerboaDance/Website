@@ -1,5 +1,6 @@
 ---
 name: Animal Nature
+headerimage: Jerboa-4-of-92.jpg
 upcoming: true
 shows:
     -

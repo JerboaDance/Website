@@ -11,6 +11,9 @@
             {% include nav.html %}
             
             <div class="content">
+                {% capture gallerypath %}/assets{{page.id}}{% endcapture %}
+                
+                <div class="headerimage"><img src="{{ gallerypath }}/{{ page.headerimage }}" alt="Photograph of {{ page.name }} performance"/></div>
                 <h1>{{ page.name }}</h1>
                 {% if page.upcoming == true %}
                     {% include buytickets.html %}
@@ -27,7 +30,13 @@
                     </li>
                 {% endfor %}
                 </ul>
-                <p>Videos and photographs go here</p>
+                <div class="gallery">
+                    {% for image in site.static_files %}
+                        {% if image.path contains gallerypath %}
+                            <div class="gallery-item"><img src="{{image.path}}" alt="Photograph of {{ page.name }} performance"/></div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
             </div><!-- /.content -->
             
             {% include footer.html %}
