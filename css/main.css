@@ -67,7 +67,7 @@ footer ul li {
     margin: 0px 5px;    
 }
 
-.default-wrapper {
+.wrapper {
     margin: 0px auto;
     width: 70%;
     display: grid;
@@ -78,7 +78,14 @@ footer ul li {
         "content"
         "footer";
 }
+
 .default-container {
+    grid-area: content;
+    display:grid;
+    justify-items: center;
+    background-color: #FFFFFF;
+}
+.dancer-container {
     grid-area: content;
     display:grid;
     justify-items: center;

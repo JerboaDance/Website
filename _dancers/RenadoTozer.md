@@ -1,0 +1,5 @@
+---
+name: Renado Tozer
+status: active
+---
+Renado Tozer is thrilled for his fourth season with Jerboa Dance Company. He has been involved with dance and movement theatre for over 15 years. Although never a competitive dancer, he was a national competitive gymnast for near 12 years (coach for 5 years), and has been trained in ballet, jazz, modern and lyrical at Pam’s School of Dance in Toledo, Ia., at the University of the Arts summer camp in Philadelphia, Pa., The Edge in LA, and Webster Conservatory/University in St. Louis, Mo.(where he attended college for musical theatre). Professionally, he has been involved in a very diverse variety of productions including; BumperShoot with Movement Theatre in Seattle, Wa., Miss Continental in Chicago, Ill., Webster University Dance BFA, and after a short hiatus due to injuries, he bounced back in to joining Diversity Dance Company, turned Splinter Dance Company. Currently he is working with Issaquah Dance Theatre as a hip hop teacher, New Vision Dance Company out of Issaquah and One Degree/Flash Mob out of Seattle.

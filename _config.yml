@@ -1,2 +1,14 @@
 name: Jerboa Dance
 markdown: kramdown
+
+collections:
+  dancers:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: dancers
+    values:
+      layout: dancer
+      role: Dancer

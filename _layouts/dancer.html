@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <title>{{ page.title }}</title>
+            <title>{{ page.name }}</title>
             <!-- link to main stylesheet -->
             <link rel="stylesheet" type="text/css" href="/css/main.css" />
         </head>
@@ -10,9 +10,11 @@
                 {% include header.html %}
                 {% include nav.html %}
                 
-                <div class="default-container">
-                    {{ content }}
-                </div><!-- /.container -->
+                <div class="dancer-container">
+                    <h1>{{ page.name }}</h1>
+                    <h2>{{ page.role }}</h2>
+                    <p>{{ content }}</p>
+                </div><!-- /.dancer-container -->
                 
                 {% include footer.html %}
 

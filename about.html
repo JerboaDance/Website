@@ -11,13 +11,16 @@ title: Jerboa Dance - About
     <br>
     <div class="dancer-bios">
         <ul>
-        {% for dancer in site.data.dancers %}
-            {% if dancer.status == 'active' %}
+        {% assign active_dancers = site.dancers | where: 'status', 'active' | sort: "role" %}
+        {% for dancer in active_dancers %}
             <li>
-                <h1>{{ dancer.name }}</h1>
-                <p>{{ dancer.bio }}</p>
+                {% if dancer.role == "Dancer" %}
+                <h1><a href={{dancer.url}}>{{ dancer.name }}</a></h1>
+                {% else %}                
+                <h1><a href={{dancer.url}}>{{ dancer.name }} - {{dancer.role}}</a></h1>
+                {% endif %}
+                <p>{{ dancer.content | markdownify | truncate: 200 }}</p>
             </li>
-            {% endif %}
         {% endfor %}
         </ul>
     </div>

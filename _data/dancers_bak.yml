@@ -1,36 +1,3 @@
-- name: Jaime Waliczek
-  status: active
-  role: [Artistic Director, Choreographer, Dancer]
-  bio: Jaime Waliczek took dance classes growing up in Chicago at Gus Giordano and Studio Two while doing high level competitive gymnastics.  She continued her training at the University of Illinois, Urbana-Champaign. After moving to Seattle, Jaime performed with the Eastside Moving Company from 2000-2002, working with people like Deborah Wolf and Wade Madsen, and whet her choreography appetite by created her first modern work. After that, Jaime started teaching yoga and performing full time when she danced with Fusion Dance, Better Biscuit, XODO, Unexpected, R Dance, and Seattle Jazz along with DASS Dance and the Seattle Opera, as dance captain. She then worked with some choreographers at the University of Washington while she completed her Master’s degree in nutrition and with Angela Harriell for Nutcracker Rated R and other of her works while living in NYC for the 2007 season. In addition to her work with Jerboa Dance, Jaime’s choreography has been shown in the DUMBO festival, the Cool NY festival, DNA Works in Progress, and guest performances for events and shows including Around the World in 80 Sips and Trip and Fall. Her extensive background in gymnastics and yoga inform her movement and choreography. Jaime loves performing but has an intense itch to create works as well and is excited to be back from her hiatus starting a family to get back on stage.
-
-- name: Christina Johnson
-  status: active
-  role: [Choreographer, Dancer]
-  bio: |
-    Christina Johnson fell in love with dance back in the 1990s.  She was dancing in Portland, OR with BodyVox, Bent, and Kinetic Images dance companies and entertaining the idea of being a “dancer”.  She moved to Seattle where she co-founded Jerboa Dance, and has dedicated her professional life to the arts ever since.  Her time in Seattle was spent learning and performing with many prominent companies and choreographers, including: Cheronne Wong, BetterBiscuit, XODO, Alethea Adsitt, Fusion, and Seattle Jazz. After finding success in Seattle and to continue her growth as an artist, she moved across the country. Having joined the New York dance scene in 2005, Christina is proud to have been on stage with The Love Show, Shir Dance Theater, Eva Dean Dance, Anahid Sofian Dance Company, Gilgamesh Theater, Witches in Bikinis, & independentdancemaker/Kara Tatelbaum.
-
-- name: Renado Tozer
-  status: active
-  role: [Dancer]
-  bio: Renado Tozer is thrilled for his fourth season with Jerboa Dance Company. He has been involved with dance and movement theatre for over 15 years. Although never a competitive dancer, he was a national competitive gymnast for near 12 years (coach for 5 years), and has been trained in ballet, jazz, modern and lyrical at Pam’s School of Dance in Toledo, Ia., at the University of the Arts summer camp in Philadelphia, Pa., The Edge in LA, and Webster Conservatory/University in St. Louis, Mo.(where he attended college for musical theatre). Professionally, he has been involved in a very diverse variety of productions including; BumperShoot with Movement Theatre in Seattle, Wa., Miss Continental in Chicago, Ill., Webster University Dance BFA, and after a short hiatus due to injuries, he bounced back in to joining Diversity Dance Company, turned Splinter Dance Company. Currently he is working with Issaquah Dance Theatre as a hip hop teacher, New Vision Dance Company out of Issaquah and One Degree/Flash Mob out of Seattle.
-
-- name: Sean Calavan
-  status: active
-  role: [Dancer]
-  bio: Sean Calavan started taking dance class on a whim when he was 8 years old, and has loved it ever since. In 1999, he received the Dance With the Force award from the LADF convention/competition, and spent the summer training at EDGE performing Arts Center in Hollywood, CA. Since then, Sean has performed onboard 7 different ships for Holland America in addition to working as an assistant choreographer for the company that hires the entertainment, Stiletto Entertainment in Los Angeles. In LA, he has worked with many choreographers including Patti Columbo, John Charron, Tommy Tune, Carla Kama, Adam Parson, Mandy Moore, and Terri Best. Sean is very excited to be making his Seattle dance debut with Jerboa Dance, and is looking forward to a new adventure in the Pacific Northwest.
-
-- name: Stella Kutz
-  status: active
-  role: [Dancer]
-  bio: Stella Kutz was born and raised in Seattle, where she studied at Spectrum Dance Theater. She continued her performance education at the University of Nevada, Las Vegas, where she had the pleasure of performing both locally and overseas. She is ecstatic to be home and performing with Jerboa Dance. She is also starting her own dance space in Georgetown, Yaw Theater, where she hopes to unite people and artists in a frenzy of divine creation.
-
-- name: Andres Lopez
-  status: active
-  role: [Dancer]
-  bio: |
-    Andres Lopez was born and raised in Medellin, Colombia. He graduated from the University of Antioquia, where eventually he became a teacher.
-
-    He has spent a summer in Cuba studying Video Dance with Silvina Szperling, and a year in Brazil taking studied in fashion photography. He’s been part of dance collectives in Medellin allowing him to travel with contemporary dance companies. Andres is very excited to be making his Seattle dance debut 
 
 - name: Angela Harriell - Choreographer
   status: active
@@ -49,10 +16,6 @@
   
     “To understand what I am saying, you have to believe that dance is something other than technique. We forget where the movements come from. They are born from life.”
     ― Pina Bausch
-
-- name: Rachel Koshiol
-  role: [Dancer]
-  bio: Rachel Koshiol started dance classes at the age of 4 and has been moving ever since. While growing up in Minnesota, Rachel danced competitively at Hopkins Dance Center while spending her summers training at MDT and Ballet Arts. During the summer of 2004, Rachel attended American Ballet Theatre’s summer intensive program at the University of Alabama. During college, she paused her dance career to focus on studies but felt called to return immediately after graduation. For two seasons, she competed at an adult level, and during the winter of 2014, she preformed with the Minnesota Dance Collaborative for their opening season of “HoliDaydream”. Since moving to Seattle, Rachel has worked with choreographers including Alicia Mullikin, Marlo Ariz, Maya Soto and Maxie Jamal. She continues to preform in a diverse mix productions, most recently for USC Event’s “Paradiso Festival”. Rachel craves unique styles that blur lines of standard genres and push her physical and mental boundaries. She is excited to continue her exploration with Jerboa Dance.
 
 - name: David Lorence Schleiffers
   role: [Dancer]
