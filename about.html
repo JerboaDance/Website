@@ -12,10 +12,12 @@ title: Jerboa Dance - About
     <div class="dancer-bios">
         <ul>
         {% for dancer in site.data.dancers %}
+            {% if dancer.status == 'active' %}
             <li>
                 <h1>{{ dancer.name }}</h1>
                 <p>{{ dancer.bio }}</p>
             </li>
+            {% endif %}
         {% endfor %}
         </ul>
     </div>
