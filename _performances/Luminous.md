@@ -1,5 +1,6 @@
 ---
 name: Luminous
+headerimage: GlowyStella.jpg
 shows:
     -
         dates: August 20, 2010

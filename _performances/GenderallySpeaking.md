@@ -1,5 +1,6 @@
 ---
 name: Genderally Speaking
+headerimage: genderallyspeaking.png
 shows:
     -
         dates: August 20, 2010

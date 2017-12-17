@@ -1,5 +1,6 @@
 ---
 name: continuum
+headerimage: continuum_2430.jpg
 shows:
     -
         dates: March 24, 25, 29, & April 1, 2017

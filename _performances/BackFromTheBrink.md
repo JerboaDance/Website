@@ -1,5 +1,6 @@
 ---
 name: Back From the Brink
+headerimage: back-from-the-brink-header.jpg
 shows:
     -
         dates: September 17-18, 2010
