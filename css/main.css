@@ -85,3 +85,16 @@ footer ul li {
     justify-items: center;
     background-color: #FFFFFF;
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item {
+    width: 200px;
+    height: 200px;
+}
+.gallery-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
