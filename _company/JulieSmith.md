@@ -1,0 +1,4 @@
+---
+name: Julie Smith
+---
+Julie is so excited to be performing with Jerboa Dance! She holds a BFA in acting and trained at the Martha Graham School of dance. Julie danced with her Graham teacher’s modern company, Coyote Dancers, for two NYC seasons and soon landed her first Off Broadway show. She went on to perform in many regional theatres, for Disney, and went on the road with national tours of Gigi and CanCan. Her favorite roles include; “Val”, in the European tour of A Chorus Line, and most recently, the 1st cover for the leading lady, “Stephanie”, in the Broadway tour of Saturday Night Fever. Julie now is also pursuing acting in Film and TV! She has a small recurring part on One Life to Live, and played her first supporting role in an indie feature film last year.

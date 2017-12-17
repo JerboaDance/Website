@@ -1,16 +1,6 @@
 body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+    background-color: #555555;
+    margin: 0px;
 }
 a {
     text-decoration: none;
@@ -19,25 +9,85 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
+header {
+    display: grid;
+    grid-area: header;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    justify-items: center;
+    background-color: #FFFFFF;
+}
+header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+header h2 {
+    font-size: 1em;
+    margin-top: 5px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+nav {    
+    background-color: #a553ba;
+    grid-area: nav;
+    display:grid;
+    justify-items: center;
 }
-
-ul.posts li {
+nav ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
     list-style: none;
+    font-weight: bold;
+    display:flex;
+}
+nav ul li {
+    display: inline;
+    margin: 0px 5px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #CCCCCC;
+}
+footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+footer ul li {
+    display: inline;
+    margin: 0px 5px;    
+}
+
+.wrapper {
+    margin: 0px auto;
+    width: 70%;
+    display: grid;
+    justify-items: stretch;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "footer";
+}
+
+.default-container {
+    grid-area: content;
+    display:grid;
+    justify-items: center;
+    background-color: #FFFFFF;
+}
+.bio-container {
+    grid-area: content;
+    display:grid;
+    justify-items: center;
+    background-color: #FFFFFF;
 }

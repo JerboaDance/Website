@@ -1,0 +1,5 @@
+---
+name: Christina Johnson
+status: active
+---
+Christina Johnson fell in love with dance back in the 1990s.  She was dancing in Portland, OR with BodyVox, Bent, and Kinetic Images dance companies and entertaining the idea of being a “dancer”.  She moved to Seattle where she co-founded Jerboa Dance, and has dedicated her professional life to the arts ever since.  Her time in Seattle was spent learning and performing with many prominent companies and choreographers, including: Cheronne Wong, BetterBiscuit, XODO, Alethea Adsitt, Fusion, and Seattle Jazz. After finding success in Seattle and to continue her growth as an artist, she moved across the country. Having joined the New York dance scene in 2005, Christina is proud to have been on stage with The Love Show, Shir Dance Theater, Eva Dean Dance, Anahid Sofian Dance Company, Gilgamesh Theater, Witches in Bikinis, & independentdancemaker/Kara Tatelbaum.

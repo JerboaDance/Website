@@ -1,0 +1,7 @@
+---
+name: Jacquelyn S. Corcoran
+---
+Jacquelyn S. Corcoran Is Co-founder of Underscore Dance Lab, an experimental dance performance company she created with her partner Shakira Rae Adams, currently based out of Seattle WA. She most recently relocated from Ohio where for the past few years she has performed as a solo artist in many showcases and with multiple choreographers in the Ohio/Kentucky area. She has taught contemporary and modern dance at Contemporary Dance Theater for the past eight years as well as performed in and co produced their showcase series Performance and Time Arts. She was also a multi scholarship recipient at both American Dance Festival and Bates Dance Festival. Jacquelyn was a founding member of MamLuft&Co. Dance in Cincinnati Ohio from 2007-2011, the city’s premier modern dance company. She holds a Bachelor of Arts in Dance from Texas Woman’s University and has had the honor of studying with prolific artists, such as Jesse Zarrit, Kathleen Hermesdorf, David Dorfman, and Larry Keigwin to name a few, in her lifetime. She is forever humbled by her experiences and the many great artists she can say helped inform her dancing body thus far.
+
+“To understand what I am saying, you have to believe that dance is something other than technique. We forget where the movements come from. They are born from life.”
+― Pina Bausch

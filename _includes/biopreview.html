@@ -1,0 +1,8 @@
+<li>
+    {% if person.role == "Dancer" %}
+    <h1><a href={{person.url}}>{{ person.name }}</a></h1>
+    {% else %}                
+    <h1><a href={{person.url}}>{{ person.name }} - {{person.role}}</a></h1>
+    {% endif %}
+    <p>{{ person.content | markdownify | truncate: 200 }}</p>
+</li>

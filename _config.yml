@@ -1,2 +1,15 @@
 name: Jerboa Dance
 markdown: kramdown
+
+collections:
+  company:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: company
+    values:
+      layout: bio
+      role: Dancer
+      status: inactive
