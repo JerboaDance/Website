@@ -47,6 +47,8 @@ p {
 .default-nav {    
     background-color: #a553ba;
     grid-area: nav;
+    display:grid;
+    justify-items: center;
 }
 
 .default-container {
