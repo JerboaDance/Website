@@ -12,3 +12,4 @@ defaults:
     values:
       layout: bio
       role: Dancer
+      status: inactive

@@ -13,15 +13,9 @@ title: Jerboa Dance - About
         <ul>
         {% assign active_company = site.company | where: 'status', 'active' | sort: "role" %}
         {% for person in active_company %}
-            <li>
-                {% if person.role == "Dancer" %}
-                <h1><a href={{person.url}}>{{ person.name }}</a></h1>
-                {% else %}                
-                <h1><a href={{person.url}}>{{ person.name }} - {{person.role}}</a></h1>
-                {% endif %}
-                <p>{{ person.content | markdownify | truncate: 200 }}</p>
-            </li>
+            {% include biopreview.html %}
         {% endfor %}
+            <li><h1><a href="PreviousCompanyMembers.html">Previous Company Members</a></h1></li>
         </ul>
     </div>
 </div>
