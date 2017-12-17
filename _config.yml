@@ -2,13 +2,13 @@ name: Jerboa Dance
 markdown: kramdown
 
 collections:
-  dancers:
+  company:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: dancers
+      type: company
     values:
-      layout: dancer
+      layout: bio
       role: Dancer
