@@ -2,17 +2,6 @@ body {
     background-color: #555555;
     margin: 0px;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-    display:flex;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
 a {
     text-decoration: none;
     color: #999;
@@ -33,12 +22,10 @@ p {
     justify-items: center;
     background-color: #FFFFFF;
 }
-
 .default-header h1 {
     font-size: 3em;
     margin-bottom: 5px;
 }
-
 .default-header h2 {
     font-size: 1em;
     margin-top: 5px;
@@ -50,13 +37,40 @@ p {
     display:grid;
     justify-items: center;
 }
+.default-nav ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    display:flex;
+}
+.default-nav ul li {
+    display: inline;
+    margin: 0px 5px;
+}
 
 .default-container {
     grid-area: content;
+    display:grid;
+    justify-items: center;
+    background-color: #FFFFFF;
 }
 
 .default-footer {
     grid-area: footer;
+}
+.default-footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.default-footer ul li {
+    display: inline;
+    margin: 0px 5px;    
 }
 
 .default-wrapper {
