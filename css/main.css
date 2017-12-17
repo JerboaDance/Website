@@ -91,3 +91,9 @@ footer ul li {
     justify-items: center;
     background-color: #FFFFFF;
 }
+.performance-container {
+    grid-area: content;
+    display:grid;
+    justify-items: center;
+    background-color: #FFFFFF;
+}

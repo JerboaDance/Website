@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.name }}</title>
+        <!-- link to main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            {% include header.html %}
+            {% include nav.html %}
+            
+            <div class="performance-container">
+                <p>{{ content }}</p>
+                <ul>
+                {% for show in page.shows %}
+                    <li>
+                        <ul>
+                            <li><h2>{{show.dates}}</h2></li>
+                            <li>{{show.location}}</li>
+                            <li>Company: {{show.company}}</li>
+                        </ul>
+                    </li>
+                {% endfor %}
+                </ul>
+                <p>Videos and photographs go here</p>
+            </div><!-- /.performance-container -->
+            
+            {% include footer.html %}
+
+        </div><!-- ./wrapper -->
+    </body>
+</html>
