@@ -9,27 +9,27 @@
         <div class="wrapper">
             {% include header.html %}
             {% include nav.html %}
-            
+
+            {% capture gallerypath %}/assets{{page.id}}{% endcapture %}            
+            <div class="header-image"><img src="{{ gallerypath }}/{{ page.headerimage }}" alt="Photograph of {{ page.name }} performance"/></div>
+        
             <div class="content">
-                {% capture gallerypath %}/assets{{page.id}}{% endcapture %}
-                
-                <div class="headerimage"><img src="{{ gallerypath }}/{{ page.headerimage }}" alt="Photograph of {{ page.name }} performance"/></div>
                 <h1>{{ page.name }}</h1>
                 {% if page.upcoming == true %}
                     {% include buytickets.html %}
                 {% endif %}
-                <p>{{ content }}</p>
-                <ul>
+                <p class="performance-description">{{ content }}</p>
+                <div class="show-dates">
                 {% for show in page.shows %}
-                    <li>
-                        <ul>
-                            <li><h2>{{show.dates}}</h2></li>
-                            <li>{% include venue.html %}</li>
-                            <li>{% include castlist.html %}</li>
-                        </ul>
-                    </li>
+                    <h2>{{show.dates}}</h2>
+                    
+                    {% capture venuepath %}/venues/{{show.location}}{% endcapture %}
+                    {% assign venue = site.venues | where: "id", venuepath | first %}
+                    <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
+
+                    {% include castlist.html %}
                 {% endfor %}
-                </ul>
+                </div>
                 <div class="gallery">
                     {% for image in site.static_files %}
                         {% if image.path contains gallerypath %}
