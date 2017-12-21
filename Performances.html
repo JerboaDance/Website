@@ -13,10 +13,11 @@ title: Jerboa Dance - Performances
     
     <div>
         <h2>Prior Performances</h2>
-        <ul>
+        <div>
         {% for performance in priorperformances %}
-            {% include performancepreview.html %}
+            <h1><a href={{performance.url}}>{{ performance.name }}</a></h1>
+            <p>{{ performance.content | markdownify | truncate: 200 }}</p>
         {% endfor %}
-        </ul>
+        </div>
     </div>
 </div>
