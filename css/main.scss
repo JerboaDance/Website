@@ -1,49 +1,56 @@
 ---
 ---
-$gray: #999;
+@import url(https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Lato);
+$purple: #a553ba;
+$media-query-min-width: 40em;
 
 body {
     background-color: #555555;
+    font-family: "Lato";
     margin: 0;
 }
-
 ul, ol, li, p, h1, h2, h3 {
     margin: 0; padding: 0;
 }
-
+h1 {
+    padding-bottom: .5em;
+}
 a {
     text-decoration: none;
-    color: $gray;
+    color: #999;
 }
 a:hover {
-    text-decoration: underline;
+    color: $purple
 }
 p, li {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.4em;
     color: #333;
-    padding-bottom: 1em;
+}
+input, label {
+    display: block;
 }
 
 header {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     text-align: center;
     padding: 1em 2em;
 }
 header h1 {
     font-size: 3em;
-    padding-bottom: .15em;
+    padding-bottom: 0;
+    font-family: "Oswald";
 }
 header h2 {
     font-size: 1em;
+    padding-bottom: .5em;
+    font-family: "Open Sans";
 }
 
 nav {    
-    background-color: #a553ba;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: bold;
+    background-color: $purple;
     text-align: center;
     padding: 1em;
+    font-family: "Open Sans";
 }
 nav ul {
     list-style: none;
@@ -52,32 +59,52 @@ nav li {
     display: inline-block;
     padding: 0 0.7em;
 }
+nav a {
+    color: #DDD;
+}
+nav a:hover {
+    color: #000;
+}
 
 footer {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     background-color: #CCCCCC;
-}
-footer ul {
-    list-style: none;
-    font-weight: bold;
+    padding: 1em;
     display:grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    justify-items: center;
+    font-weight: bold;
 }
-footer li {
-    display: inline;
-    margin: 0px 5px;    
+footer div {
+    margin: 0px 5px;
 }
 
 .wrapper {
-    margin: 0 auto;
-    width: 70%;
-    max-width: 1000px;
+    max-width: 55em;
     background-color: #FFFFFF;
 }
 
 .content {
-    padding: 2em 3em;
+    padding: 2em 2em;
+}
+
+@media (min-width: $media-query-min-width) {
+    .wrapper {
+    margin: 0 auto;
+    }
+  
+    .content {
+        padding: 2em 3em;
+    }
+}
+
+.header-image img {
+    width: 100%;
+}
+
+.show-dates {
+    padding-bottom: 2em;
+}
+.show-dates h2 {
+    padding-top: 1em;
 }
 
 .gallery {
@@ -88,11 +115,6 @@ footer li {
     width: 200px;
     height: 200px;
 }
-
-.header-image img {
-    width: 100%;
-}
-
 .gallery-item img{
     max-width: 100%;
     max-height: 100%;
@@ -100,9 +122,66 @@ footer li {
 
 .cast-list li {
     display: inline;
-    color: $gray;
+    color: #999;
 }
-
 .cast-list li:not(:last-child):after {
     content: ', ';
+}
+
+.company-description p {
+    padding-bottom: 1em;
+}
+.bios-list {
+    padding-top: 2em;
+}
+.bios-list li {
+    list-style: none;
+    padding-bottom: 2em;
+}
+.bios-list p {
+    padding-top: .3em;
+}
+
+@media (min-width: $media-query-min-width) {
+    .bios-list {
+        column-count: 2;
+    }
+}
+
+.upcoming-performance h1, .upcoming-performance h2 {
+    display: inline;
+    padding-right: .5em;
+}
+.upcoming-performance p {
+    padding-bottom: .7em;
+}
+.prior-performances {
+    padding-top: 3em;
+}
+.prior-performances li {
+    list-style: none;
+    padding-bottom: 2em;
+}
+.prior-performances h2 {
+    padding-bottom: 1em;
+}
+
+.bio-title {    
+    padding-top: 2em;
+    padding-bottom: .5em;
+}
+.bio-title  h1, .bio-title h2 {
+    display: inline;
+    padding-right: .5em;
+    padding-bottom: 0;
+}
+.bio-image img {
+    display:block;
+    margin: 0 auto;
+}
+
+@media (min-width: $media-query-min-width) {
+    .bios-list {
+        column-count: 2;
+    }
 }

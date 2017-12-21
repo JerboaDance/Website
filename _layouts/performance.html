@@ -18,8 +18,8 @@
                 {% if page.upcoming == true %}
                     {% include buytickets.html %}
                 {% endif %}
-                <p>{{ content }}</p>
-                <div class="show-date">
+                <p class="performance-description">{{ content }}</p>
+                <div class="show-dates">
                 {% for show in page.shows %}
                     <h2>{{show.dates}}</h2>
                     

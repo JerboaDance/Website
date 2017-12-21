@@ -3,21 +3,27 @@ layout: default
 title: Jerboa Dance - Performances
 ---
 <div>
-    <h1>Performances</h1>
     {% assign upcomingperformance = site.performances | where: "upcoming", "true" | first %}
     {% assign priorperformances = site.performances | where: "upcoming", "false" %}
     
-    <h2><a href="{{upcomingperformance.url}}">Upcoming Show - {{upcomingperformance.name}}</a></h2>    
-    {% include buytickets.html %}
-    <div>{{ upcomingperformance.content | markdownify }}</div>
+    <div class="upcoming-performance">
+        <a href="{{upcomingperformance.url}}">
+            <h1>{{upcomingperformance.name}}</h1> 
+            <h2>{{ upcomingperformance.shows[0].dates }}</h2>
+        </a>
+        <p>{{ upcomingperformance.content }}</p>
+        {% include buytickets.html %}
+    </div>
     
-    <div>
+    <div class="prior-performances">
         <h2>Prior Performances</h2>
-        <div>
+        <ul>
         {% for performance in priorperformances %}
-            <h1><a href={{performance.url}}>{{ performance.name }}</a></h1>
-            <p>{{ performance.content | markdownify | truncate: 200 }}</p>
+            <li>
+                <h3><a href={{performance.url}}>{{ performance.name }}</a></h3>
+                <p>{{ performance.content | truncate: 200 }}</p>
+            </li>
         {% endfor %}
-        </div>
+        </ul>
     </div>
 </div>

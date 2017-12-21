@@ -5,7 +5,7 @@ title: Jerboa Dance - Previous Company Members
 <div>
     <h1>Previous Company Members</h1>
     <p>Over the years Jerboa Dance has been lucky to work with a number of talented artists.</p>
-    <div class="company">
+    <div class="bios-list">
         <ul>
         {% assign previouscompanymembers = site.company | where: 'status', 'inactive' | sort: "role" %}
         {% for person in previouscompanymembers %}

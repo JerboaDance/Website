@@ -17,10 +17,12 @@
                     {% unless headshot %}
                         {% assign headshotpath = "/assets/company/default.png" %}
                     {% endunless %}
-
-                    <h1>{{ page.name }}</h1>
-                    <h2>{{ page.role }}</h2>
-                    <img src="{{headshotpath}}" alt="{{ page.name }}" />
+                    
+                    <div class="bio-image"><img src="{{headshotpath}}" alt="{{ page.name }}" /></div>
+                    <div class="bio-title">
+                        <h1>{{ page.name }}</h1>
+                        <h2>{{ page.role }}</h2>  
+                    </div>  
                     <p>{{ content }}</p>
                 </div><!-- /.content -->
                 
