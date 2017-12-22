@@ -1,6 +1,5 @@
 ---
 name: continuum
-headerimage: continuum_2430.jpg
 shows:
     -
         dates: September 1st & 3rd, 2017 (Bumbershoot)

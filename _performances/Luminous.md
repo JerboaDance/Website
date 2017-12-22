@@ -1,6 +1,5 @@
 ---
 name: Luminous
-headerimage: GlowyStella.jpg
 shows:
     -
         dates: February 12th, 13th, & 14th 2016

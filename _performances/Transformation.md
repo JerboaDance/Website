@@ -1,6 +1,5 @@
 ---
 name: Transformation
-headerimage: IMG_7197_3.jpg
 shows:
     -
         dates: Jun 24th & 25th, 2016
