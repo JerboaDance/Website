@@ -6,7 +6,6 @@ collections:
     output: true
   performances:
     output: true
-  venues:
 
 defaults:
   - scope:

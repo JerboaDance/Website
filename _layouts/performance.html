@@ -22,9 +22,7 @@
                 <div class="show-dates">
                 {% for show in page.shows %}
                     <h2>{{show.dates}}</h2>
-                    
-                    {% capture venuepath %}/venues/{{show.location}}{% endcapture %}
-                    {% assign venue = site.venues | where: "id", venuepath | first %}
+                    {% assign venue = site.data.venues[show.location] %}
                     <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
 
                     {% include castlist.html %}
