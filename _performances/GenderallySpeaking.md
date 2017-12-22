@@ -3,7 +3,7 @@ name: Genderally Speaking
 headerimage: genderallyspeaking.png
 shows:
     -
-        dates: August 20, 2010
+        dates: August 20th, 2010
         location: CenterHouseTheater
         company: [JaimeWaliczek, SarahChampion, MeghanShepard, FinnCronin, SeanCalavan, MorganHoughton, RenadoTozer, KristinKissell]
         guests: [JJBrychell,RandiRascal,NellWaliczek]

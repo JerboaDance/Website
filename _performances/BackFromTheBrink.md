@@ -3,15 +3,15 @@ name: Back From the Brink
 headerimage: back-from-the-brink-header.jpg
 shows:
     -
-        dates: September 17-18, 2010
+        dates: September 17th & 18th, 2010
         location: ACTTheater
         company: [JaimeWaliczek, ChristinaJohnson, SarahChampion, RenadoTozer, KristinKissell, MeghanShepard, JenniferElder, SeanCalavan]
     -
-        dates: February 13-14, 2009
+        dates: February 13th & 14th, 2009
         location: ACTTheater
         company: [JaimeWaliczek, ChristinaJohnson, ElizabethBurwell, EricVlach, PamVlach, MeghanShepard, DavidLorenceSchleiffers, PamelaTurpen]
     -
-        dates: November 14-17, 2007
+        dates: November 14th, 15th, 16th, & 17th, 2007
         location: HudsonGuildTheater
         company: [JaimeWaliczek, ChristinaJohnson, ElizabethBurwell, EricVlach, NoaSagie, AdamPellegrine, Hanna-LeeSakakibara, JulieSmith]
 ---

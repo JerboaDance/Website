@@ -3,11 +3,15 @@ name: continuum
 headerimage: continuum_2430.jpg
 shows:
     -
-        dates: March 24, 25, 29, & April 1, 2017
+        dates: September 1st & 3rd, 2017 (Bumbershoot)
         location: CenterHouseTheater
-        company: people
+        company: [JaimeWaliczek, RachelKoshiol, StellaKutz, ShakiraRaeAdams, JacquelynCorcoran, SeanCalavan, AndresLopez, RenadoTozer ]
     -
-        dates: June 4-5, 2010
+        dates: March 24th, 25th, 29th, & April 1st, 2017
+        location: CenterHouseTheater
+        company: [JaimeWaliczek, MeganCourtney, BridgetGunning, ShakiraRaeAdams, JacquelynCorcoran, SeanCalavan, AlexUng, RenadoTozer ]
+    -
+        dates: June 4th & 5th, 2010
         location: ACTTheater
         company: [JaimeWaliczek, SarahChampion, MeghanShepard, FinnCronin, SeanCalavan, MorganHoughton, RenadoTozer, KristinKissell]
 ---
