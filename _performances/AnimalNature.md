@@ -7,5 +7,8 @@ shows:
         location: YawTheater
         company: [JaimeWaliczek, SeanCalavan, RenadoTozer, StellaKutz, AndresLopez, KarenBrown, ConstanzeVillines]
         guests: [AngelaHarriell, ChristinaJohnson, SebastianLange, MajaZavaljevski]
+photographs:
+    header:
+        featured: [RenadoTozer, AndresLopez]
 ---
 NEED A DESCRIPTION FOR THIS SHOW
