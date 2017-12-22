@@ -178,6 +178,8 @@ footer div {
 .bio-image img {
     display:block;
     margin: 0 auto;
+    max-width: 60%;
+    max-height: 20em;
 }
 
 @media (min-width: $media-query-min-width) {

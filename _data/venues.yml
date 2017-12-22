@@ -1,0 +1,24 @@
+ACTTheater:
+    name: ACT Theater
+    city: Seattle
+    website: http://www.acttheatre.org/
+CenterHouseTheater:
+    name: Center House Theater
+    city: Seattle
+    website: http://www.seattlecenter.com/locations/detail.aspx?id=62
+EriksonTheater:
+    name: Erikson Theater
+    city: Seattle
+    website: https://theatres.seattlecentral.edu/erickson-theatre
+HudsonGuildTheater:
+    name: Hudson Guild Theater
+    city: New York
+    website: http://hudsonguild.org/space-rentals/
+VelocityDanceCenter:
+    name: Velocity Dance Center
+    city: Seattle
+    website: http://velocitydancecenter.org/
+YawTheater:
+    name: Yaw Theater
+    city: Seattle
+    website: http://www.yawtheater.com/
