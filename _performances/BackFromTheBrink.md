@@ -1,6 +1,6 @@
 ---
 name: Back From the Brink
-shows:
+prior-shows:
     -
         dates: September 17th & 18th, 2010
         location: ACTTheater

@@ -15,19 +15,31 @@
         
             <div class="content">
                 <h1>{{ page.name }}</h1>
-                {% if page.upcoming == true %}
-                    {% include buytickets.html %}
-                {% endif %}
-                <p class="performance-description">{{ content }}</p>
-                <div class="show-dates">
-                {% for show in page.shows %}
-                    <h2>{{show.dates}}</h2>
-                    {% assign venue = site.data.venues[show.location] %}
-                    <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
 
-                    {% include castlist.html %}
-                {% endfor %}
+                {% if page.upcoming-show %}
+                    <h2>{{page.upcoming-show.dates}}</h2>
+                    {% assign venue = site.data.venues[page.upcoming-show.location] %}
+                    <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
+                    <p class="performance-description">{{ content }}</p>
+                    {% include castlist.html people=page.upcoming-show.company%}
+                    {% include buytickets.html %}
+                {% else %}
+                    <p class="performance-description">{{ content }}</p>
+                {% endif %}
+                
+                <div class="prior-show-dates">
+                    {% if page.prior-shows.size > 0 and page.upcoming-show %}
+                        <h2>Prior Shows</h2>
+                    {% endif %}
+                    
+                    {% for show in page.prior-shows %}
+                        <h2>{{show.dates}}</h2>
+                        {% assign venue = site.data.venues[show.location] %}
+                        <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
+                        {% include castlist.html people=show.company %}
+                    {% endfor %}
                 </div>
+
                 <div class="gallery">
                     {% for image in site.static_files %}
                         {% if image.path contains gallerypath %}{% unless image.path contains "header.jpg" %}

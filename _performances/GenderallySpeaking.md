@@ -1,6 +1,6 @@
 ---
 name: Genderally Speaking
-shows:
+prior-shows:
     -
         dates: August 20th, 2010
         location: CenterHouseTheater

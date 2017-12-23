@@ -1,24 +1,31 @@
 ---
 layout: default
 title: Jerboa Dance - Performances
+upcoming: AnimalNature
+prior-performances: [continuum, Transformation, Luminous, GenderallySpeaking, BackFromTheBrink]
 ---
-<div>
-    {% assign upcomingperformance = site.performances | where: "upcoming", "true" | first %}
-    {% assign priorperformances = site.performances | where: "upcoming", "false" %}
-    
+<div>    
     <div class="upcoming-performance">
-        <a href="{{upcomingperformance.url}}">
-            <h1>{{upcomingperformance.name}}</h1> 
-            <h2>{{ upcomingperformance.shows[0].dates }}</h2>
+        {% capture performance-id %}/performances/{{page.upcoming}}{% endcapture %}
+        {% assign performance = site.performances | where:"id", performance-id | first %}
+
+        <a href="{{performance.url}}">
+            <h1>{{ performance.name }}</h1> 
+            <h2>{{ performance.upcoming-show.dates }}</h2>
         </a>
-        <p>{{ upcomingperformance.content }}</p>
+        {% assign venue = site.data.venues[performance.upcoming-show.location] %}
+        <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
+        <p class="performance-description">{{ performance.content }}</p>
+        {% include castlist.html people=performance.upcoming-show.company%}
         {% include buytickets.html %}
     </div>
     
     <div class="prior-performances">
         <h2>Prior Performances</h2>
         <ul>
-        {% for performance in priorperformances %}
+        {% for prior-performance in page.prior-performances %}
+            {% capture performance-id %}/performances/{{ prior-performance }}{% endcapture %}
+            {% assign performance = site.performances | where:"id", performance-id | first %}
             <li>
                 <h3><a href={{performance.url}}>{{ performance.name }}</a></h3>
                 <p>{{ performance.content | truncate: 200 }}</p>

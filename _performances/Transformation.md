@@ -1,6 +1,6 @@
 ---
 name: Transformation
-shows:
+prior-shows:
     -
         dates: Jun 24th & 25th, 2016
         location: EriksonTheater

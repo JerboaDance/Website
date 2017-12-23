@@ -1,6 +1,6 @@
 ---
 name: Luminous
-shows:
+prior-shows:
     -
         dates: February 12th, 13th, & 14th 2016
         location: VelocityDanceCenter
