@@ -271,6 +271,10 @@ footer div {
 .company-list li:not(:last-child):after {
     content: ', ';
 }
+.guest-list li {
+    list-style: none;
+    color: $link-gray;
+}
 
 hr {
     margin: 2em 7em 0 7em;
