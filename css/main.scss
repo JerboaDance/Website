@@ -71,11 +71,26 @@ footer {
     background-color: #CCCCCC;
     padding: 1em;
     display:grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    font-weight: bold;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 footer div {
-    margin: 0px 5px;
+    padding: 0 5px;
+    margin: 0 auto;
+    width: auto;
+}
+.contact-info div {
+    padding: 0;
+    text-align: center;
+}
+.contact-info a {
+    display: inline-block;
+    padding: .25em 7px;
+}
+.social-media-icons img {
+    width: 29px;
+    height: 29px;
 }
 
 .wrapper {
