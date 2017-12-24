@@ -1,6 +1,6 @@
 ---
 name: continuum
-shows:
+prior-shows:
     -
         dates: September 1st & 3rd, 2017 (Bumbershoot)
         location: CenterHouseTheater

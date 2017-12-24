@@ -10,6 +10,13 @@
                 {% include header.html %}
                 {% include nav.html %}
                 
+                {% capture page-header-image %}/assets/{{ page.path | remove: ".html" }}/header.jpg{% endcapture %}
+                {% for file in site.static_files %}
+                    {% if file.path == page-header-image %}
+                        <div class="header-image"><img src="{{ page-header-image }}" alt="Page header image"/></div>
+                    {% endif %}
+                {% endfor %}
+                
                 <div class="content">
                     {{ content }}
                 </div><!-- /.container -->
