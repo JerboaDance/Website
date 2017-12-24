@@ -5,7 +5,23 @@ prior-shows:
         dates: August 20th, 2010
         location: CenterHouseTheater
         company: [JaimeWaliczek, SarahChampion, MeghanShepard, FinnCronin, SeanCalavan, MorganHoughton, RenadoTozer, KristinKissell]
-        guests: [JJBrychell,RandiRascal,NellWaliczek]
+        guest-artists: 
+            JJ Brychell: 
+                role: Master of Ceremonies
+            Randi Rascal:
+                role: Burlesque
+                url: "http://randirascal.com"
+            Nell Waliczek:
+                role: Poetry Reading
+            Sean Calavan:
+                role: Drag Queen
+                url: "/company/SeanCalavan.html"
+            Katie Sawicki:
+                role: Baton Twirler
+                url: "/company/KatieSawicki.html"
+            Marc von Holzen:
+                role: Afterparty DJ
+                url: "http://www.soundcloud.com/marcvh"
 photographs:
     header:
         featured: [RenadoTozer, FinnCronin]

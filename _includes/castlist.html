@@ -1,11 +1,38 @@
-<ul class="cast-list">
-    {% for personid in include.people %}
-        {% capture personpath %}/company/{{personid}}{% endcapture %}
-        {% assign person = site.company | where: "id", personpath | first %}
-        {% if person %}
-        <li><a href="{{person.url}}">{{ person.name }}</a></li>
-        {% else %}
-        <li>{{ personid }}</li>
-        {% endif %}
-    {% endfor %}
-</ul>
+<div class="company-list">
+    {% if include.show.guest-artists %}
+    <h3>Company</h3>
+    {% endif %}
+
+    <ul>
+        {% for person-id in include.show.company %}
+            {% capture personpath %}/company/{{person-id}}{% endcapture %}
+            {% assign person = site.company | where: "id", personpath | first %}
+            
+            {% if person %}
+                {% if person.url %}
+                    <li><a href="{{person.url}}">{{ person.name }}</a></li>
+                {% else %}
+                    <li>{{ person.name }}</li>
+                {% endif %}
+            {% else %}
+                <li>{{ person-id }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+
+{% if include.show.guest-artists %}
+<div class="guest-list">
+    <h3>Guest Artists</h3>
+    <ul>
+        {% for guest-artist in include.show.guest-artists %}
+            {% if guest-artist[1].url %}
+            <li><a href="{{guest-artist[1].url}}">{{guest-artist[1].role}}: {{ guest-artist[0] }}</a></li>
+            {% else %}
+            <li>{{guest-artist[1].role}}: {{ guest-artist[0] }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

@@ -5,7 +5,27 @@ prior-shows:
         dates: February 12th, 13th, & 14th 2016
         location: VelocityDanceCenter
         company: [JaimeWaliczek, StellaKutz, SarahChampion, SeanCalavan, MeghanShepard, RenadoTozer, JenniferElder]
-        guests: [SteveDolan, AndreasFetz, ScottoMoore, RandiRascall, HarmonyGwinn, AndrewScott, JenniferElder]
+        guest-artists:
+            Steve Dolan:
+                role: Master of Ceremonies
+            Andreas Fetz:
+                role: Arm Balancer
+                url: "/company/AndreasFetz.html"
+            Scotto Moore:
+                role: Comedian
+                url: "http://scotto.org/"
+            Randi Rascal:
+                role: Burlesque
+                url: "http://randirascal.com"
+            Harmony Gwinn:
+                role: Flow Artist
+                url: "https://www.facebook.com/HaHaHarmonyy"
+            Andrew Scott:
+                role: Drag Queen
+                url: "https://www.facebook.com/andrew.scott.90813236"
+            Jennifer Elder:
+                role: Dancer
+                url: "/company/JenniferElder.html"
 photographs:
     header:
         featured: [StellaKutz, Unknown]

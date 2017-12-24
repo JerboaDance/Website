@@ -16,7 +16,7 @@ prior-performances: [continuum, Transformation, Luminous, GenderallySpeaking, Ba
         {% assign venue = site.data.venues[performance.upcoming-show.location] %}
         <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
         <p class="performance-description">{{ performance.content }}</p>
-        {% include castlist.html people=performance.upcoming-show.company%}
+        {% include castlist.html show=performance.upcoming-show%}
         {% include buytickets.html %}
     </div>
     

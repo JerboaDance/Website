@@ -21,7 +21,7 @@
                     {% assign venue = site.data.venues[page.upcoming-show.location] %}
                     <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
                     <p class="performance-description">{{ content }}</p>
-                    {% include castlist.html people=page.upcoming-show.company%}
+                    {% include castlist.html show=page.upcoming-show%}
                     {% include buytickets.html %}
                 {% else %}
                     <p class="performance-description">{{ content }}</p>
@@ -36,7 +36,7 @@
                         <h2>{{show.dates}}</h2>
                         {% assign venue = site.data.venues[show.location] %}
                         <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
-                        {% include castlist.html people=show.company %}
+                        {% include castlist.html show=show %}
                     {% endfor %}
                 </div>
 

@@ -3,8 +3,17 @@ name: Animal Nature
 upcoming-show:
     dates: February 9th, 10th, & 11th, 2018
     location: YawTheater
-    company: [JaimeWaliczek, SeanCalavan, RenadoTozer, StellaKutz, AndresLopez, KarenBrown, ConstanzeVillines]
-    guests: [AngelaHarriell, ChristinaJohnson, SebastianLange, MajaZavaljevski]
+    company: [JaimeWaliczek, ChristinaJohnson, SeanCalavan, RenadoTozer, StellaKutz, AndresLopez, KarenBrown, ConstanzeVillines]
+    guest-artists: 
+        Angela Harriell:
+            role: Choreographer
+            url: "http://www.theloveshownyc.com/"
+        Sebastian Lange: 
+            role: Musician
+        Maja Zavaljevski: 
+            role: Musician
+        AJ Rogers: 
+            role: Acrobat
 photographs:
     header:
         featured: [RenadoTozer, AndresLopez]
