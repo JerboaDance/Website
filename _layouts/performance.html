@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{{ page.name }}</title>
-        <!-- link to main stylesheet -->
-        <link rel="stylesheet" type="text/css" href="/css/main.css" />
-    </head>
+    {% capture title %}Jerboa Dance - {{page.name}}{% endcapture %}
+    {% include head-tag.html title=title %}
     <body>
         <div class="wrapper">
             {% include header.html %}
