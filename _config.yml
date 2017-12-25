@@ -1,6 +1,8 @@
 name: Jerboa Dance
 markdown: kramdown
 
+google_analytics: UA-1310792-1
+
 collections:
   company:
     output: true
