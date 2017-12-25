@@ -176,16 +176,22 @@ footer div {
 
 .gallery {
     padding-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
+    column-count: 2;
+    column-gap: 0;
 }
 .gallery-item {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
 }
 .gallery-item img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (min-width: $media-query-min-width) {
+    .gallery {
+        column-count: 3;
+    }
 }
 
 .venue h3 {
@@ -249,6 +255,7 @@ footer div {
 .two-columns h3{
     padding-top: .15em;
     font-size: 1em;
+    color: $gray;
 }
 .two-columns p{
     padding-top: .3em;
