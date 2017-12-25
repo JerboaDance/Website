@@ -1,39 +1,30 @@
-<div class="company-list">
-    {% if include.show.guest-artists %}
-    <h3>Company</h3>
-    {% endif %}
-
-    <ul>
-        {% assign sorted-company= include.show.company | sort %}
-        {% for person-id in sorted-company %}
-            {% capture personpath %}/company/{{person-id}}{% endcapture %}
-            {% assign person = site.company | where: "id", personpath | first %}
-            
-            {% if person %}
-                {% if person.url %}
-                    <li><a href="{{person.url}}">{{ person.name }}</a></li>
+<ul class="cast-list">
+    {% for highlight in include.show.highlights %}
+        {% if highlight[1].url %}
+        <li><h3>{{highlight[1].role}}</h3> <a href="{{highlight[1].url}}">{{ highlight[0] }}</a></li>
+        {% else %}
+        <li><h3>{{highlight[1].role}}</h3> {{ highlight[0] }}</li>
+        {% endif %}
+    {% endfor %}
+    <li>
+        <h3>Company</h3>
+        <ul class="company-list">
+            {% assign sorted-company= include.show.company | sort %}
+            {% for person-id in sorted-company %}
+                {% capture personpath %}/company/{{person-id}}{% endcapture %}
+                {% assign person = site.company | where: "id", personpath | first %}
+                
+                {% if person %}
+                    {% if person.url %}
+                        <li><a href="{{person.url}}">{{ person.name }}</a></li>
+                    {% else %}
+                        <li>{{ person.name }}</li>
+                    {% endif %}
                 {% else %}
-                    <li>{{ person.name }}</li>
+                    <li>{{ person-id }}</li>
                 {% endif %}
-            {% else %}
-                <li>{{ person-id }}</li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-</div>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>
 
-
-{% if include.show.guest-artists %}
-<div class="guest-list">
-    <h3>Guest Artists</h3>
-    <ul>
-        {% for guest-artist in include.show.guest-artists %}
-            {% if guest-artist[1].url %}
-            <li><a href="{{guest-artist[1].url}}">{{guest-artist[1].role}}: {{ guest-artist[0] }}</a></li>
-            {% else %}
-            <li>{{guest-artist[1].role}}: {{ guest-artist[0] }}</li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}

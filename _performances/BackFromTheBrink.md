@@ -5,14 +5,26 @@ prior-shows:
         dates: September 17th & 18th, 2010
         location: ACTTheater
         company: [JaimeWaliczek, ChristinaJohnson, SarahChampion, RenadoTozer, KristinKissell, MeghanShepard, JenniferElder, SeanCalavan]
+        highlights:
+            Jaime Waliczek:
+                role: Choreographer
+                url: "/company/JaimeWaliczek.html"
     -
         dates: February 13th & 14th, 2009
         location: ACTTheater
-        company: [JaimeWaliczek, ChristinaJohnson, ElizabethBurwell, EricVlach, PamVlach, MeghanShepard, DavidLorenceSchleiffers, PamelaTurpen]
+        company: [JaimeWaliczek, ChristinaJohnson, ElizabethBurwell, EricVlach, PamVlach, MeghanShepard, DavidLorenceSchleiffers, PamelaTurpen]        
+        highlights:
+            Jaime Waliczek:
+                role: Choreographer
+                url: "/company/JaimeWaliczek.html"
     -
         dates: November 14th, 15th, 16th, & 17th, 2007
         location: HudsonGuildTheater
         company: [JaimeWaliczek, ChristinaJohnson, ElizabethBurwell, EricVlach, NoaSagie, AdamPellegrine, Hanna-LeeSakakibara, JulieSmith]
+        highlights:
+            Jaime Waliczek:
+                role: Choreographer
+                url: "/company/JaimeWaliczek.html"
 photographs:
     header:
         featured: [ElizabethBurwell, NoaSagie, Hanna-LeeSakakibara, EricVlach]

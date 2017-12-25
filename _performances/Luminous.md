@@ -5,9 +5,12 @@ prior-shows:
         dates: February 12th, 13th, & 14th 2016
         location: VelocityDanceCenter
         company: [JaimeWaliczek, StellaKutz, SarahChampion, SeanCalavan, MeghanShepard, RenadoTozer, JenniferElder]
-        guest-artists:
+        highlights:
             Steve Dolan:
                 role: Master of Ceremonies
+            Jaime Waliczek:
+                role: Choreographer
+                url: "/company/JaimeWaliczek.html"
             Andreas Fetz:
                 role: Arm Balancer
                 url: "/company/AndreasFetz.html"
