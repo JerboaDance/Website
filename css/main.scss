@@ -52,18 +52,41 @@ nav {
     text-align: center;
     padding: 1em;
     font-family: "Open Sans";
-}
-nav ul {
     list-style: none;
 }
 nav li {
     display: inline-block;
     padding: 0 0.7em;
+    position: relative;
+    white-space: nowrap;
 }
 nav a {
     color: #DDD;
 }
-nav a:hover {
+nav li:hover a {
+    color: #000;
+}
+nav li ul {    
+    display: none;
+    text-align: left;
+    overflow: visible;
+    width: auto;
+}
+nav li:hover ul {
+    display: block;
+    background-color: $purple;
+    position: absolute;
+    padding-top: 1em;
+    padding-bottom: .7em;
+    left: 0;
+}
+nav li:hover li {
+    display: block;
+}
+nav li:hover li a {
+    color: #DDD;
+}
+nav li:hover a:hover {
     color: #000;
 }
 

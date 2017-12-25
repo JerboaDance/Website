@@ -2,7 +2,20 @@
     <ul>
         <li><a href="/">HOME</a></li>
         <li><a href="/About.html">ABOUT</a></li>
-        <li><a href="/Performances.html">PERFORMANCES</a></li>
+        <li>
+            <a href="/Performances.html">PERFORMANCES</a>
+            <ul class="submenu-menu">
+                {% assign upcoming-performance = site.performances | where:"id", site.data.performances.upcoming | first %}
+                {% if upcoming-performance %}
+                    <li><a href="{{upcoming-performance.url}}">{{ upcoming-performance.name | upcase }}</a></li>
+                {% endif %}
+        
+                {% for performance-id in site.data.performances.prior %}
+                    {% assign prior-performance = site.performances | where:"id", performance-id | first %}
+                    <li><a href={{prior-performance.url}}>{{ prior-performance.name | upcase }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
         <li><a href="/performances/AnimalNature.html">ANIMAL NATURE</a></li>
     </ul>
 </nav>

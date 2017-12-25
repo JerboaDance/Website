@@ -1,34 +1,31 @@
 ---
 layout: default
 title: Jerboa Dance - Performances
-upcoming: AnimalNature
-prior-performances: [continuum, Transformation, Luminous, GenderallySpeaking, BackFromTheBrink]
 ---
 <div>    
+    {% assign upcoming-performance = site.performances | where:"id", site.data.performances.upcoming | first %}
+    {% if upcoming-performance %}        
     <div class="upcoming-performance">
-        {% capture performance-id %}/performances/{{page.upcoming}}{% endcapture %}
-        {% assign performance = site.performances | where:"id", performance-id | first %}
-
-        <a href="{{performance.url}}">
-            <h1>{{ performance.name }}</h1> 
-            <h2>{{ performance.upcoming-show.dates }}</h2>
+        <a href="{{upcoming-performance.url}}">
+            <h1>{{ upcoming-performance.name }}</h1> 
+            <h2>{{ upcoming-performance.upcoming-show.dates }}</h2>
         </a>
-        {% assign venue = site.data.venues[performance.upcoming-show.location] %}
+        {% assign venue = site.data.venues[upcoming-performance.upcoming-show.location] %}
         <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
-        <p class="performance-description">{{ performance.content }}</p>
-        {% include castlist.html show=performance.upcoming-show%}
+        <p class="performance-description">{{ upcoming-performance.content }}</p>
+        {% include castlist.html show=upcoming-performance.upcoming-show%}
         {% include buytickets.html %}
     </div>
+    {% endif %}
     
     <div class="prior-performances">
         <h2>Prior Performances</h2>
         <ul>
-        {% for prior-performance in page.prior-performances %}
-            {% capture performance-id %}/performances/{{ prior-performance }}{% endcapture %}
-            {% assign performance = site.performances | where:"id", performance-id | first %}
+        {% for performance-id in site.data.performances.prior %}
+            {% assign prior-performance = site.performances | where:"id", performance-id | first %}
             <li>
-                <h3><a href={{performance.url}}>{{ performance.name }}</a></h3>
-                <p>{{ performance.content | truncate: 200 }}</p>
+                <h3><a href={{prior-performance.url}}>{{ prior-performance.name }}</a></h3>
+                <p>{{ prior-performance.content | truncate: 200 }}</p>
             </li>
         {% endfor %}
         </ul>
