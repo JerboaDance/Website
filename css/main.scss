@@ -97,6 +97,10 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
+    column-count: 3;
+}
+footer > div {
+    display: inline-block;
 }
 footer div {
     padding: 0 5px;
