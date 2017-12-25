@@ -4,7 +4,8 @@
     {% endif %}
 
     <ul>
-        {% for person-id in include.show.company %}
+        {% assign sorted-company= include.show.company | sort %}
+        {% for person-id in sorted-company %}
             {% capture personpath %}/company/{{person-id}}{% endcapture %}
             {% assign person = site.company | where: "id", personpath | first %}
             
