@@ -14,14 +14,13 @@
                 <h1>{{ page.name }}</h1>
 
                 {% if page.upcoming-show %}
-                    <h2>{{page.upcoming-show.dates}}</h2>
-                    {% assign venue = site.data.venues[page.upcoming-show.location] %}
-                    <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
-                    <p class="performance-description">{{ content }}</p>
+                    <h2 class="show-dates">{{page.upcoming-show.dates}}</h2>
+                    {% include venue.html show=page.upcoming-show %}
+                    <div class="description">{{ content }}</div>
                     {% include castlist.html show=page.upcoming-show%}
-                    {% include buytickets.html %}
+                    {% include buytickets.html show=upcoming-performance.upcoming-show%}
                 {% else %}
-                    <p class="performance-description">{{ content }}</p>
+                    <div class="description">{{ content }}</div>
                 {% endif %}
                 
                 <div class="prior-show-dates">
@@ -30,9 +29,8 @@
                     {% endif %}
                     
                     {% for show in page.prior-shows %}
-                        <h2>{{show.dates}}</h2>
-                        {% assign venue = site.data.venues[show.location] %}
-                        <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
+                        <h2 class="show-dates">{{show.dates}}</h2>
+                        {% include venue.html show=show %}
                         {% include castlist.html show=show %}
                     {% endfor %}
                 </div>

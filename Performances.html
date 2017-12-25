@@ -10,22 +10,22 @@ title: Jerboa Dance - Performances
             <h1>{{ upcoming-performance.name }}</h1> 
             <h2>{{ upcoming-performance.upcoming-show.dates }}</h2>
         </a>
-        {% assign venue = site.data.venues[upcoming-performance.upcoming-show.location] %}
-        <p><a href="{{venue.website}}">{{venue.name}}</a>, {{venue.city}}</p>
-        <p class="performance-description">{{ upcoming-performance.content }}</p>
+        
+        {% include venue.html show=upcoming-performance.upcoming-show %}
+        <div class="description">{{ upcoming-performance.content }}</div>
         {% include castlist.html show=upcoming-performance.upcoming-show%}
-        {% include buytickets.html %}
+        {% include buytickets.html show=upcoming-performance.upcoming-show%}
     </div>
     {% endif %}
     
-    <div class="prior-performances">
-        <h2>Prior Performances</h2>
+    <div class="two-columns">
+        <h1>Prior Performances</h1>
         <ul>
         {% for performance-id in site.data.performances.prior %}
             {% assign prior-performance = site.performances | where:"id", performance-id | first %}
             <li>
-                <h3><a href={{prior-performance.url}}>{{ prior-performance.name }}</a></h3>
-                <p>{{ prior-performance.content | truncate: 200 }}</p>
+                <h2><a href={{prior-performance.url}}>{{ prior-performance.name }}</a></h2>
+                <div class="description">{{ prior-performance.content | truncate: 200 }}</div>
             </li>
         {% endfor %}
         </ul>

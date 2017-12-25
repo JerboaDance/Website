@@ -5,9 +5,12 @@ prior-shows:
         dates: August 20th, 2010
         location: CenterHouseTheater
         company: [JaimeWaliczek, SarahChampion, MeghanShepard, FinnCronin, SeanCalavan, MorganHoughton, RenadoTozer, KristinKissell]
-        guest-artists: 
+        highlights: 
             JJ Brychell: 
                 role: Master of Ceremonies
+            Jaime Waliczek:
+                role: Choreographer
+                url: "/company/JaimeWaliczek.html"
             Randi Rascal:
                 role: Burlesque
                 url: "http://randirascal.com"

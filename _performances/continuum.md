@@ -5,14 +5,26 @@ prior-shows:
         dates: September 1st & 3rd, 2017 (Bumbershoot)
         location: CenterHouseTheater
         company: [JaimeWaliczek, RachelKoshiol, StellaKutz, ShakiraRaeAdams, JacquelynCorcoran, SeanCalavan, AndresLopez, RenadoTozer ]
+        highlights:
+            Jaime Waliczek:
+                role: Choreographer
+                url: "/company/JaimeWaliczek.html"
     -
         dates: March 24th, 25th, 29th, & April 1st, 2017
         location: CenterHouseTheater
         company: [JaimeWaliczek, MeganCourtney, BridgetGunning, ShakiraRaeAdams, JacquelynCorcoran, SeanCalavan, AlexUng, RenadoTozer ]
+        highlights:
+            Jaime Waliczek:
+                role: Choreographer
+                url: "/company/JaimeWaliczek.html"
     -
         dates: June 4th & 5th, 2010
         location: ACTTheater
         company: [JaimeWaliczek, SarahChampion, MeghanShepard, FinnCronin, SeanCalavan, MorganHoughton, RenadoTozer, KristinKissell]
+        highlights:
+            Jaime Waliczek:
+                role: Choreographer
+                url: "/company/JaimeWaliczek.html"
 photographs:
     header:
         featured: [JaimeWaliczek, SarahChampion, MeghanShepard, FinnCronin, SeanCalavan, MorganHoughton, RenadoTozer, KristinKissell]

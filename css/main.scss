@@ -2,7 +2,10 @@
 ---
 @import url(https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Lato);
 $purple: #a553ba;
-$link-gray: #999;
+$gray: #999;
+$light-gray: #DDD;
+$text-black: #333;
+$menu-hover: #000;
 $media-query-min-width: 40em;
 
 body {
@@ -13,20 +16,18 @@ body {
 ul, ol, li, p, h1, h2, h3 {
     margin: 0; padding: 0;
 }
-h1 {
-    padding-bottom: .5em;
-}
 a {
     text-decoration: none;
-    color: $link-gray;
+    color: $gray;
 }
 a:hover {
     color: $purple
 }
-p, li {
+p, li, h3 {
     font-size: 1.25rem;
     line-height: 1.4em;
-    color: #333;
+    color: $text-black;
+    padding-top: 1rem;
 }
 input, label {
     display: block;
@@ -61,10 +62,10 @@ nav li {
     white-space: nowrap;
 }
 nav a {
-    color: #DDD;
+    color: $light-gray;
 }
 nav li:hover a {
-    color: #000;
+    color: $menu-hover;
 }
 nav li ul {    
     display: none;
@@ -82,16 +83,17 @@ nav li:hover ul {
 }
 nav li:hover li {
     display: block;
+    padding-top: 0.5rem;
 }
 nav li:hover li a {
-    color: #DDD;
+    color: $light-gray;
 }
 nav li:hover a:hover {
-    color: #000;
+    color: $menu-hover;
 }
 
 footer {
-    background-color: #CCCCCC;
+    background-color: $light-gray;
     padding: 1em;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -168,13 +170,12 @@ footer div {
 }
 
 .show-dates {
-    padding-bottom: 2em;
-}
-.show-dates h2 {
     padding-top: 1em;
+    padding-bottom: 0;
 }
 
 .gallery {
+    padding-top: 2em;
     display: flex;
     flex-wrap: wrap;
 }
@@ -187,54 +188,88 @@ footer div {
     max-height: 100%;
 }
 
+.venue h3 {
+    font-weight: normal;
+    font-size: 1.17rem;
+    padding: .25em 0 0 0;
+}
+
+.tickets {
+    padding-top: 1.5em;
+}
+
+.cast-list {
+    padding-left: 2em;
+    padding-top: .4em;
+    font-size: 1.17rem;
+}
+.cast-list li {
+    list-style: none;
+    color: $gray;
+    padding-top: 0;
+    font-size: 1.17rem;
+}
+.cast-list h3 {
+    display: inline;
+    color: $text-black;
+    padding-right: .25em;
+    font-size: 1.17rem;
+}
+.company-list {
+    display: inline;
+}
 .company-list li {
     display: inline;
-    color: $link-gray;
+    color: $gray;
+    font-size: 1.17rem;
 }
 .company-list li:not(:last-child):after {
     content: ', ';
 }
-.guest-list li {
-    list-style: none;
-    color: $link-gray;
-}
 
-.company-description p {
-    padding-bottom: 1em;
-}
-.bios-list {
+.two-columns {
     padding-top: 2em;
 }
-.bios-list li {
-    list-style: none;
-    padding-bottom: 2em;
+.two-columns ul {    
+    padding-top: 1em;
 }
-.bios-list p {
+.two-columns h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.two-columns li {
+    list-style: none;
+    padding-top: 0;
+    margin-bottom: 1.5em;
+}
+.two-columns h2{
+    font-size: 1.17em;
+    font-weight: bold;
+}
+.two-columns h3{
+    padding-top: .15em;
+    font-size: 1em;
+}
+.two-columns p{
     padding-top: .3em;
 }
 
 @media (min-width: $media-query-min-width) {
-    .bios-list {
+    .two-columns ul {
         column-count: 2;
+    }
+    .two-columns li {
+        overflow: hidden; /* Fix for firefox and IE 10-11  */
+        -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+        page-break-inside: avoid; /* Firefox */
+        break-inside: avoid; /* IE 10+ */
+        break-inside: avoid-column;
     }
 }
 
 .upcoming-performance h1, .upcoming-performance h2 {
     display: inline;
     padding-right: .5em;
-}
-.upcoming-performance p {
-    padding-bottom: .7em;
-}
-.prior-performances {
-    padding-top: 3em;
-}
-.prior-performances li {
-    list-style: none;
-    padding-bottom: 2em;
-}
-.prior-performances h2 {
-    padding-bottom: 1em;
 }
 
 .bio-title {    
@@ -251,10 +286,4 @@ footer div {
     margin: 0 auto;
     max-width: 60%;
     max-height: 20em;
-}
-
-@media (min-width: $media-query-min-width) {
-    .bios-list {
-        column-count: 2;
-    }
 }
