@@ -35,6 +35,12 @@
                     {% endfor %}
                 </div>
 
+                {% for video in page.videos %}
+                    <div class="performance-clip">
+                        {% include youtube.html videoid=video.id aspect-ratio=video.aspect-ratio %}
+                    </div>
+                {% endfor %}
+
                 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
                 
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
@@ -42,16 +48,13 @@
                 
                 <div class="image-gallery">                    
                     {% for image in site.static_files %}
-                        {% if image.path contains gallerypath %}{% unless image.path contains "header.jpg" %}
-
-                            {% capture src %}{{ image.path }}{% endcapture %}
+                        {% if image.path contains gallerypath %}{% unless image.path contains "header.jpg" %}{% unless image.path contains ".small.jpg" %}
 
                             {% capture caption %}
                                 <span class="caption-header">Photograph from {{page.name}}</span>
                                 <br/>
                        
                                 {% assign photograph = page.photographs | where: "id", image.path | first %}
-
                                 {% if photograph %}
 
                                     {% if photograph.featured %} 
@@ -88,8 +91,10 @@
 
                             {% endcapture %}
 
-                            <a data-fancybox="gallery" href="{{src}}" data-fancybox data-caption='{{caption}}'><img src="{{src}}"/></a>
-                        {% endunless %}{% endif %}
+                            {% assign small-src= image.path | replace:".jpg", ".small.jpg" %}
+
+                            <a data-fancybox="gallery" href="{{image.path}}" data-fancybox data-caption='{{caption}}'><img src="{{small-src}}"/></a>
+                        {% endunless %}{% endunless %}{% endif %}
                     {% endfor %}
                 </div>
             </div><!-- /.content -->
