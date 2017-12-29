@@ -1,10 +1,6 @@
 <ul class="cast-list">
     {% for highlight in include.show.highlights %}
-        {% if highlight[1].url %}
-        <li><h3>{{highlight[1].role}}</h3> <a href="{{highlight[1].url}}">{{ highlight[0] }}</a></li>
-        {% else %}
-        <li><h3>{{highlight[1].role}}</h3> {{ highlight[0] }}</li>
-        {% endif %}
+        <li><h3>{{highlight.role}}</h3> {% include person-element.html person=highlight %}</li>
     {% endfor %}
     <li>
         <h3>Company</h3>
@@ -13,16 +9,7 @@
             {% for person-id in sorted-company %}
                 {% capture personpath %}/company/{{person-id}}{% endcapture %}
                 {% assign person = site.company | where: "id", personpath | first %}
-                
-                {% if person %}
-                    {% if person.url %}
-                        <li><a href="{{person.url}}">{{ person.name }}</a></li>
-                    {% else %}
-                        <li>{{ person.name }}</li>
-                    {% endif %}
-                {% else %}
-                    <li>{{ person-id }}</li>
-                {% endif %}
+                <li>{% include person-element.html person=person id=person-id %}</li>
             {% endfor %}
         </ul>
     </li>
