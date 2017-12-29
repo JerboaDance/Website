@@ -7,8 +7,8 @@
             {% include header.html %}
             {% include nav.html %}
 
-            {% capture gallerypath %}/assets{{page.id}}{% endcapture %}            
-            <div class="header-image"><img src="{{ gallerypath }}/header.jpg" alt="Photograph of {{ page.name }} performance"/></div>
+            {% capture gallerypath %}/assets{{page.id}}/{% endcapture %}            
+            <div class="header-image"><img src="{{ gallerypath }}header.jpg" alt="Photograph of {{ page.name }} performance"/></div>
         
             <div class="content">
                 <h1>{{ page.name }}</h1>
@@ -35,45 +35,63 @@
                     {% endfor %}
                 </div>
 
-                {% include galleryoverlay.html %}
-                <photo-gallery>
-                    {% for photograph in page.photographs %}{% unless photograph.id == "header" %}
-                    <div>
-                        {% capture src %}{{ gallerypath }}/{{photograph.id}}.jpg{% endcapture %}
-                        <a href="{{src}}" class="gallery-item">
-                            <img src="{{src}}" alt="Photograph of {{ page.name }} performance"/>
-                        </a>
-                        {% if photograph.featured %}
-                        <div class="featured">
-                            <h3>Featured</h3>
-                            <ul>
-                            {% for featured in photograph.featured %}
-                                {% assign person = page.upcoming-show.highlights | where: "name", featured | first %}
-                                {% unless person %}
-                                    {% for show in page.prior-shows %}
-                                        {% assign person = show.highlights | where: "name", featured | first %}
-                                        {% if person %}{% break %}{% endif %}
-                                    {% endfor %}
-                                {% endunless %}
-                                {% unless person %}
-                                    {% capture personpath %}/company/{{featured}}{% endcapture %}
-                                    {% assign person = site.company | where: "id", personpath | first %}
-                                {% endunless %}
-                                
-                                <li>{% include person-element.html person=person id=featured %}</li>
-                            {% endfor %}
-                            </ul>
-                        </div>
-                        {% endif %}
+                <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+                
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+                
+                <div class="image-gallery">                    
+                    {% for image in site.static_files %}
+                        {% if image.path contains gallerypath %}{% unless image.path contains "header.jpg" %}
 
-                        {% if photograph.attribution %}
-                        {% assign photographer-url = site.data.photographers[photograph.attribution] %}
-                        <div class="attribution">{% include person-element.html id=photograph.attribution url=photographer-url %}</div>
-                        {% endif %}
+                            {% capture src %}{{ image.path }}{% endcapture %}
 
-                    </div>
-                    {% endunless %}{% endfor %}
-                </photo-gallery>
+                            {% capture caption %}
+                                <span class="caption-header">Photograph from {{page.name}}</span>
+                                <br/>
+                       
+                                {% assign photograph = page.photographs | where: "id", image.path | first %}
+
+                                {% if photograph %}
+
+                                    {% if photograph.featured %} 
+                                    <span>                  
+                                        <span class="caption-header">Featured:</span>
+                                        {% for featured in photograph.featured %}
+                                            {% assign person = page.upcoming-show.highlights | where: "name", featured | first %}
+                                            {% unless person %}
+                                                {% for show in page.prior-shows %}
+                                                    {% assign person = show.highlights | where: "name", featured | first %}
+                                                    {% if person %}{% break %}{% endif %}
+                                                {% endfor %}
+                                            {% endunless %}
+                                            {% unless person %}
+                                                {% capture personpath %}/company/{{featured}}{% endcapture %}
+                                                {% assign person = site.company | where: "id", personpath | first %}
+                                            {% endunless %}
+                                            
+                                            <span>{% include person-element.html person=person id=featured %}{% unless forloop.last %}, {% endunless%}</span>
+                                        {% endfor %}
+                                    </span>
+                                    {% endif %}
+                                    
+                                    {% if photograph.attribution %} 
+                                    <br/>
+                                    <span>
+                                        <span class="caption-header">Credit:</span>
+                                        {% assign photographer-url = site.data.photographers[photograph.attribution] %}
+                                        <span>{% include person-element.html id=photograph.attribution url=photographer-url %}</span>
+                                    </span>
+                                    {% endif %}
+
+                                {% endif %}
+
+                            {% endcapture %}
+
+                            <a data-fancybox="gallery" href="{{src}}" data-fancybox data-caption='{{caption}}'><img src="{{src}}"/></a>
+                        {% endunless %}{% endif %}
+                    {% endfor %}
+                </div>
             </div><!-- /.content -->
             
             {% include footer.html %}

@@ -34,10 +34,10 @@ prior-shows:
                 url: "http://www.soundcloud.com/marcvh"
 photographs:
     -
-        id: header
+        id: /assets/performances/GenderallySpeaking/header.jpg
         featured: [RenadoTozer, FinnCronin]
     -
-        id: genderallyspeaking_1
+        id: /assets/performances/GenderallySpeaking/genderallyspeaking_1.jpg
         featured: [RenadoTozer, FinnCronin]
 ---
 Jerboa Dance stepped outside its standard modern dance repertoire to bring you something sexier. Genderally Speaking was filled with naughty ballerinas, muscled acrobats, sultry temptresses, divalicious queens, and bawdy burlesque by none other than fantastic <a href="http://randirascal.com/">Randi Rascal</a>!

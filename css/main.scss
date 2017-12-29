@@ -174,7 +174,7 @@ footer div {
     padding-bottom: 0;
 }
 
-photo-gallery {
+.image-gallery {
     padding-top: 2em;
     column-gap: 0;
     column-count: 2;
@@ -182,20 +182,20 @@ photo-gallery {
     margin: 0 auto;
     display: block;
 }
-.gallery-item {
+.image-gallery > a {
     width: 100%;
     height: auto;
 }
-.gallery-item img {
+.image-gallery > a img {
     width: 100%;
     height: auto;
     display: block;
 }
-.featured, .attribution {
-    display: none;
+.caption-header {
+    font-weight: bold;
 }
 @media (min-width: $media-query-min-width) {
-    photo-gallery {
+    .image-gallery {
         column-count: 3;
     }
 }

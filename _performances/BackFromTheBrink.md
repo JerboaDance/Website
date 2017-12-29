@@ -30,53 +30,54 @@ prior-shows:
                 url: "/company/JaimeWaliczek.html"
 photographs:
     -
-        id: header
+        id: /assets/performances/BackFromTheBrink/header.jpg
         featured: [ElizabethBurwell, NoaSagie, Hanna-LeeSakakibara, EricVlach]
     -
-        id: backfromthebrink_1
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_1.jpg
         featured: [JulieSmith, Hanna-LeeSakakibara]
-        photographer: Jes&uacute;s Armand
+        attribution: Jes&uacute;s Armand
     -
-        id: backfromthebrink_2
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_2.jpg
         featured: [JaimeWaliczek, ChristinaJohnson, ElizabethBurwell, EricVlach, NoaSagie, AdamPellegrine, Hanna-LeeSakakibara, JulieSmith]
+        attribution: Jes&uacute;s Armand
     -
-        id: backfromthebrink_3
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_3.jpg
         featured: [JaimeWaliczek, ChristinaJohnson]
     -
-        id: backfromthebrink_4
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_4.jpg
         featured: [JaimeWaliczek, ChristinaJohnson]
     -
-        id: backfromthebrink_5
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_5.jpg
         featured: [JaimeWaliczek, ChristinaJohnson, EricVlach]
     -
-        id: backfromthebrink_6
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_6.jpg
         featured: [JaimeWaliczek, EricVlach]
     -
-        id: backfromthebrink_7
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_7.jpg
         featured: [JaimeWaliczek, ChristinaJohnson, EricVlach, NoaSagie, JulieSmith]
     -
-        id: backfromthebrink_8
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_8.jpg
         featured: [JaimeWaliczek, ChristinaJohnson, EricVlach]
     -
-        id: backfromthebrink_9
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_9.jpg
         featured: [JaimeWaliczek]
     -
-        id: backfromthebrink_10
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_10.jpg
         featured: [JaimeWaliczek, ChristinaJohnson]
     -
-        id: backfromthebrink_11
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_11.jpg
         featured: [JulieSmith, ChristinaJohnson, NoaSagie ]
     -
-        id: backfromthebrink_12
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_12.jpg
         featured: [ElizabethBurwell, NoaSagie, Hanna-LeeSakakibara, EricVlach]
     -
-        id: backfromthebrink_13
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_13.jpg
         featured: [JaimeWaliczek, ChristinaJohnson, ElizabethBurwell, EricVlach, NoaSagie, AdamPellegrine, Hanna-LeeSakakibara, JulieSmith]
     -
-        id: backfromthebrink_14
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_14.jpg
         featured: [JaimeWaliczek, ElizabethBurwell, EricVlach]
     -
-        id: backfromthebrink_15
+        id: /assets/performances/BackFromTheBrink/backfromthebrink_15.jpg
         featured: [JaimeWaliczek, ElizabethBurwell, EricVlach]
 ---
 This acrobatic, energetic modern dance ballet takes audiences on a gripping journey into the human psyche. Conceived around the classic stages of grief, Act I begins after a traumatic event leads the dancers to reflect on their lives. Act II moves into the discovery of how to push forward, build new relationships, find community, and hope.

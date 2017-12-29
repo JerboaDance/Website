@@ -29,7 +29,7 @@ upcoming-show:
             role: Acrobat
 photographs:
     -
-        id: header
+        id: /assets/performances/AnimalNature/header.jpg
         featured: [RenadoTozer, AndresLopez]
 ---
 What is your inner animal? Join Jerboa Dance for a night of revelry, entertainment, exploration, humanity, and of course dancing. We will take you on a journey from the mystical to the political with a variety of acts showcasing amazing talent. There will be some of Jerboa's signature athletic and emotional style interspersed with live music, burlesque, and circus.

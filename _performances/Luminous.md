@@ -39,14 +39,10 @@ prior-shows:
                 url: "/company/JenniferElder.html"
 photographs:
     -
-        id: header
+        id: /assets/performances/Luminous/header.jpg
         featured: [StellaKutz, Unknown]
     -
-        id: luminous_1
-        featured: [StellaKutz, Unknown, Scotto Moore]
-        attribution: Jes&uacute;s Armand
-    -
-        id: luminous_2
+        id: /assets/performances/Luminous/luminous_1.jpg
         featured: [StellaKutz, SeanCalavan, RenadoTozer, JaimeWaliczek, JenniferElder]
 ---
 After a four year hiatus, Jerboa Dance is back! Come in out of the darkness and join us for a fun evening of dance, sexiness, and a DJ’d afterparty. Be entertained by sultry cabaret, witty dialogue, spinning lights, acrobatics, drag, burlesque, and, of course, the sexier side of our modern, athletic partnering.
