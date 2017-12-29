@@ -30,6 +30,7 @@ photographs:
         featured: [ElizabethBurwell, NoaSagie, Hanna-LeeSakakibara, EricVlach]
     backfromthebrink_1:
         featured: [JulieSmith, Hanna-LeeSakakibara]
+        photographer: Jes&uacute;s Armand
     backfromthebrink_2:
         featured: [JaimeWaliczek, ChristinaJohnson, ElizabethBurwell, EricVlach, NoaSagie, AdamPellegrine, Hanna-LeeSakakibara, JulieSmith]
     backfromthebrink_3:

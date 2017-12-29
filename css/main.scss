@@ -174,10 +174,13 @@ footer div {
     padding-bottom: 0;
 }
 
-.gallery {
+photo-gallery {
     padding-top: 2em;
-    column-count: 2;
     column-gap: 0;
+    column-count: 2;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 .gallery-item {
     width: 100%;
@@ -189,7 +192,7 @@ footer div {
     display: block;
 }
 @media (min-width: $media-query-min-width) {
-    .gallery {
+    photo-gallery {
         column-count: 3;
     }
 }

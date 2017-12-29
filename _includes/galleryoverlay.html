@@ -1,0 +1,174 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>        
+    class PhotoGallery extends HTMLElement {
+        constructor() {
+            super();
+        }        
+
+        connectedCallback() {
+            let shadowRoot = this.attachShadow({mode:'open'});
+
+            // TODO figure out how to get the host styles for links, lists of things, and fonts
+            shadowRoot.innerHTML = `
+            <style>
+                .overlay p, .overlay div, .overlay a, .overlay h3{
+                    color: #999;
+                    display: inline-block;
+                    padding: 0 .25em;
+                }
+
+                .overlay a {
+                    text-decoration: none;
+                }
+
+                .overlay a:hover {
+                    color: #a553ba;
+                }
+
+                .overlay { 
+                    height: 100%;
+                    width: 100%;
+                    position: fixed; /* Stay in place */
+                    z-index: 1; /* Sit on top */
+                    left: 0;
+                    top: 0;
+                    overflow-x: hidden; /* Disable horizontal scroll */
+                    display: none;
+                }
+
+                .overlay .background {
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-color: rgb(0,0,0); /* Black fallback color */
+                    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+                }
+
+                .overlay .content {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    width: auto;
+                    height: auto;
+                    margin: 100px;
+                }
+
+                .overlay .photograph {
+                    width: 100%;
+                    height: auto;                    
+                    margin: 0 auto;
+                    padding: 0 0 1em 0;
+                }
+                .overlay .attribution{
+                    padding: 0;
+                    float: right;
+                }
+
+                .overlay .featured{
+                    padding: 0;
+                    float: left;
+                }
+                
+                .overlay .close-button {
+                    position: absolute;
+                    top: 20px;
+                    right: 45px;
+                    font-size: 60px;
+                }
+
+            </style>
+            <div class="overlay">
+                <div class="background"></div>
+                <div class="content">
+                    <img class="photograph" />
+                    <div class="featured"></div>
+                    <div class="attribution"></div>
+                </div>
+                <a href="javascript:void(0)" class="close-button">&times;</a>
+            </div>
+            <slot></slot>
+            `;
+
+            this._overlayElement = shadowRoot.querySelector(".overlay");
+            shadowRoot.querySelector("slot").addEventListener("click", this.onItemClick.bind(this));
+
+            // Add the close handlers to the close button and the translucent background
+            this._overlayElement.querySelector(".background").addEventListener("click", this.onOverlayCloseClick.bind(this));
+            this._overlayElement.querySelector(".close-button").addEventListener("click", this.onOverlayCloseClick.bind(this));
+        }
+            
+        showOverlay (galleryItemElement) {
+            let photgraphElement = this._overlayElement.querySelector(".photograph");
+            let featuredElement = this._overlayElement.querySelector(".featured");
+            let attributionElement = this._overlayElement.querySelector(".attribution");
+            
+            photgraphElement.setAttribute("src", galleryItemElement.getAttribute("href"));
+            // TODO set the alt 
+
+            // Helper function for building featured people and attribution tags
+            function appendLinkToElement(element, text, url) {
+                if (url) {
+                    $(element).append("<a href='" + url + "'>" + text + "</a>");
+                }
+                else {
+                    $(element).append("<div>" + text + "</div>");
+                }
+            }
+            
+            // Set the list of people in the photograph
+            $(featuredElement).empty();
+            let featured = $(galleryItemElement).data("featured");
+            if (featured) {
+                $(featuredElement).append("<h3>Pictured</h3>");
+                $.each(featured, function(key, value) {
+                    appendLinkToElement(featuredElement, key, value);
+                });
+            }
+            
+            // Set the attribution
+            $(attributionElement).empty();
+            let attribution = $(galleryItemElement).data("attribution");
+            if (attribution) {
+                $(attributionElement).append("<h3>Credit</h3>");
+                appendLinkToElement(attributionElement, attribution["name"], attribution["url"]);
+            }
+
+            this._galleryItemElement = galleryItemElement;
+            this._overlayElement.style.display = "block";
+        }
+
+        hideOverlay() {
+            this._overlayElement.style.display = "none";
+            this._galleryItemElement = null;
+        }
+
+        // TODO disable scrolling
+        
+        onOverlayCloseClick (e) {
+            e.preventDefault();
+            this.hideOverlay();
+            //history.back();
+            return false;
+        }
+        
+        onItemClick (e) {
+            e.preventDefault();
+
+            let galleryItemElement = e.target.parentElement;
+            this.showOverlay(galleryItemElement);
+            
+            /*
+            let url = location.href + "#" + galleryItemElement.id;
+            if (location.hash) {
+                url = url.replace(location.hash, "");
+            }
+            history.pushState(null, null, url);
+*/
+            return false;              
+        }
+    }
+
+    customElements.define('photo-gallery', PhotoGallery);
+</script>
