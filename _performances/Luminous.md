@@ -6,35 +6,47 @@ prior-shows:
         location: VelocityDanceCenter
         company: [JaimeWaliczek, StellaKutz, SarahChampion, SeanCalavan, MeghanShepard, RenadoTozer, JenniferElder]
         highlights:
-            Steve Dolan:
+            -
+                name: Steve Dolan
                 role: Master of Ceremonies
-            Jaime Waliczek:
+            -
+                name: Jaime Waliczek
                 role: Choreographer
                 url: "/company/JaimeWaliczek.html"
-            Andreas Fetz:
+            -
+                name: Andreas Fetz
                 role: Arm Balancer
                 url: "/company/AndreasFetz.html"
-            Scotto Moore:
+            -
+                name: Scotto Moore
                 role: Comedian
                 url: "http://scotto.org/"
-            Randi Rascal:
+            -
+                name: Randi Rascal
                 role: Burlesque
                 url: "http://randirascal.com"
-            Harmony Gwinn:
+            -
+                name: Harmony Gwinn
                 role: Flow Artist
                 url: "https://www.facebook.com/HaHaHarmonyy"
-            Andrew Scott:
+            -
+                name: Andrew Scott
                 role: Drag Queen
                 url: "https://www.facebook.com/andrew.scott.90813236"
-            Jennifer Elder:
+            -
+                name: Jennifer Elder
                 role: Dancer
                 url: "/company/JenniferElder.html"
 photographs:
-    header:
+    -
+        id: header
         featured: [StellaKutz, Unknown]
-    luminous_1:
-        featured: [StellaKutz, Unknown]
-    luminous_2:
+    -
+        id: luminous_1
+        featured: [StellaKutz, Unknown, Scotto Moore]
+        attribution: Jes&uacute;s Armand
+    -
+        id: luminous_2
         featured: [StellaKutz, SeanCalavan, RenadoTozer, JaimeWaliczek, JenniferElder]
 ---
 After a four year hiatus, Jerboa Dance is back! Come in out of the darkness and join us for a fun evening of dance, sexiness, and a DJ’d afterparty. Be entertained by sultry cabaret, witty dialogue, spinning lights, acrobatics, drag, burlesque, and, of course, the sexier side of our modern, athletic partnering.

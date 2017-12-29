@@ -6,16 +6,21 @@ prior-shows:
         location: EriksonTheater
         company: [JaimeWaliczek, MeghanShepard, SarahChampion, StellaKutz, RenadoTozer, AndreasFetz, AlexUng, KarenBrown]
         highlights: 
-            Jaime Waliczek:
+            -
+                name: Jaime Waliczek
                 role: Choreographer
                 url: "/company/JaimeWaliczek.html"
-            Splinter Dance: 
+            -
+                name: Splinter Dance
                 role: Dance Company
-            Paris Original: 
+            -
+                name: Paris Original
                 role: Boylesque
-            Sarah Schmidt: 
+            -
+                name: Sarah Schmidt
                 role: Musician
-            Jen Wagner: 
+            -
+                name: Jen Wagner
                 role: Musician
 ---
 Jerboa Dance returned for the second time in 2016 with another new work, Transformation, an athletic, modern exploration of human development from childhood to adulthood, dysfunction, and relationships.

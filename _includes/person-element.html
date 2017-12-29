@@ -1,0 +1,13 @@
+{% if include.person %}
+    {% if include.person.url %}
+        <a href="{{include.person.url}}">{{ include.person.name }}</a>
+    {% else %}
+        {{ include.person.name }}
+    {% endif %}
+{% else %}
+    {% if include.url %}
+        <a href="{{include.url}}">{{ include.id }}</a>
+    {% else %}
+        {{ include.id }}
+    {% endif %}
+{% endif %}

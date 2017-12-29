@@ -1,27 +1,23 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>        
+<script>
     class PhotoGallery extends HTMLElement {
-        constructor() {
-            super();
-        }        
-
         connectedCallback() {
             let shadowRoot = this.attachShadow({mode:'open'});
 
             // TODO figure out how to get the host styles for links, lists of things, and fonts
             shadowRoot.innerHTML = `
             <style>
-                .overlay p, .overlay div, .overlay a, .overlay h3{
+                p, div, a, h3{
                     color: #999;
                     display: inline-block;
                     padding: 0 .25em;
                 }
 
-                .overlay a {
+                a {
                     text-decoration: none;
                 }
 
-                .overlay a:hover {
+                a:hover {
                     color: #a553ba;
                 }
 
@@ -36,7 +32,7 @@
                     display: none;
                 }
 
-                .overlay .background {
+                .background {
                     height: 100%;
                     width: 100%;
                     position: absolute;
@@ -46,7 +42,7 @@
                     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
                 }
 
-                .overlay .content {
+                .content {
                     position: relative;
                     left: 0;
                     top: 0;
@@ -55,29 +51,29 @@
                     margin: 100px;
                 }
 
-                .overlay .photograph {
+                .photograph {
                     width: 100%;
                     height: auto;                    
                     margin: 0 auto;
                     padding: 0 0 1em 0;
                 }
-                .overlay .attribution{
+
+                .attribution{
                     padding: 0;
                     float: right;
                 }
 
-                .overlay .featured{
+                .featured{
                     padding: 0;
                     float: left;
                 }
                 
-                .overlay .close-button {
+                .close-button {
                     position: absolute;
                     top: 20px;
                     right: 45px;
                     font-size: 60px;
                 }
-
             </style>
             <div class="overlay">
                 <div class="background"></div>
