@@ -186,10 +186,13 @@ photo-gallery {
     width: 100%;
     height: auto;
 }
-.gallery-item img{
+.gallery-item img {
     width: 100%;
     height: auto;
     display: block;
+}
+.featured, .attribution {
+    display: none;
 }
 @media (min-width: $media-query-min-width) {
     photo-gallery {

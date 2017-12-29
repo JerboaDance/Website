@@ -38,14 +38,15 @@
                 {% include galleryoverlay.html %}
                 <photo-gallery>
                     {% for photograph in page.photographs %}{% unless photograph.id == "header" %}
-
+                    <div>
                         {% capture src %}{{ gallerypath }}/{{photograph.id}}.jpg{% endcapture %}
-                        <a href="{{src}}" class="gallery-item" data-featured="{}">
+                        <a href="{{src}}" class="gallery-item">
                             <img src="{{src}}" alt="Photograph of {{ page.name }} performance"/>
                         </a>
-
                         {% if photograph.featured %}
-                            <div class="featured">
+                        <div class="featured">
+                            <h3>Featured</h3>
+                            <ul>
                             {% for featured in photograph.featured %}
                                 {% assign person = page.upcoming-show.highlights | where: "name", featured | first %}
                                 {% unless person %}
@@ -59,16 +60,18 @@
                                     {% assign person = site.company | where: "id", personpath | first %}
                                 {% endunless %}
                                 
-                                <div>{% include person-element.html person=person id=featured %}</div>
+                                <li>{% include person-element.html person=person id=featured %}</li>
                             {% endfor %}
-                            </div>
+                            </ul>
+                        </div>
                         {% endif %}
 
                         {% if photograph.attribution %}
-                            {% assign photographer-url = site.data.photographers[photograph.attribution] %}
-                            <div class="attribution">{% include person-element.html id=photograph.attribution url=photographer-url %}</div>
+                        {% assign photographer-url = site.data.photographers[photograph.attribution] %}
+                        <div class="attribution">{% include person-element.html id=photograph.attribution url=photographer-url %}</div>
                         {% endif %}
 
+                    </div>
                     {% endunless %}{% endfor %}
                 </photo-gallery>
             </div><!-- /.content -->

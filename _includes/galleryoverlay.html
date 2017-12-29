@@ -7,65 +7,54 @@
             // TODO figure out how to get the host styles for links, lists of things, and fonts
             shadowRoot.innerHTML = `
             <style>
-                p, div, a, h3{
+                p, div, a, h3, li, ul{
                     color: #999;
-                    display: inline-block;
-                    padding: 0 .25em;
+                    margin: 0;
+                    padding: 0;
+                    display: inline;
+                    list-style: none;
+                }
+                div {
+                    display: block;
                 }
 
                 a {
                     text-decoration: none;
                 }
-
                 a:hover {
                     color: #a553ba;
                 }
 
-                .overlay { 
-                    height: 100%;
-                    width: 100%;
-                    position: fixed; /* Stay in place */
-                    z-index: 1; /* Sit on top */
-                    left: 0;
-                    top: 0;
-                    overflow-x: hidden; /* Disable horizontal scroll */
+                .overlay {
                     display: none;
-                }
-
-                .background {
-                    height: 100%;
-                    width: 100%;
-                    position: absolute;
+                    position: fixed;
+                    z-index: 1;
                     left: 0;
                     top: 0;
+                    height: 100%;
+                    width: 100%;
+                    overflow-x: hidden; /* Disable horizontal scroll */
                     background-color: rgb(0,0,0); /* Black fallback color */
                     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-                }
-
-                .content {
-                    position: relative;
-                    left: 0;
-                    top: 0;
-                    width: auto;
-                    height: auto;
-                    margin: 100px;
+                    padding-top: 7em;
                 }
 
                 .photograph {
-                    width: 100%;
-                    height: auto;                    
-                    margin: 0 auto;
-                    padding: 0 0 1em 0;
+                    display:block;
+                    max-width: 80%;
+                    max-height: 80%;
+                    margin: auto;
                 }
 
-                .attribution{
-                    padding: 0;
-                    float: right;
+                .featured, .attribution{
+                    padding: 2em;
+                    text-align: center;
+                    margin: auto;
+                    width: 80%;
+                    max-width: 55em;
                 }
-
-                .featured{
-                    padding: 0;
-                    float: left;
+                .featured li:not(:last-child):after {
+                    content: ', ';
                 }
                 
                 .close-button {
@@ -76,68 +65,52 @@
                 }
             </style>
             <div class="overlay">
-                <div class="background"></div>
-                <div class="content">
-                    <img class="photograph" />
-                    <div class="featured"></div>
-                    <div class="attribution"></div>
-                </div>
                 <a href="javascript:void(0)" class="close-button">&times;</a>
+                <img class="photograph" />
+                <div class="featured"></div>
+                <div class="attribution"></div>
             </div>
             <slot></slot>
             `;
 
             this._overlayElement = shadowRoot.querySelector(".overlay");
+            this._attributionElement = this._overlayElement.querySelector(".attribution");
             shadowRoot.querySelector("slot").addEventListener("click", this.onItemClick.bind(this));
 
-            // Add the close handlers to the close button and the translucent background
-            this._overlayElement.querySelector(".background").addEventListener("click", this.onOverlayCloseClick.bind(this));
             this._overlayElement.querySelector(".close-button").addEventListener("click", this.onOverlayCloseClick.bind(this));
         }
             
         showOverlay (galleryItemElement) {
-            let photgraphElement = this._overlayElement.querySelector(".photograph");
-            let featuredElement = this._overlayElement.querySelector(".featured");
-            let attributionElement = this._overlayElement.querySelector(".attribution");
             
-            photgraphElement.setAttribute("src", galleryItemElement.getAttribute("href"));
-            // TODO set the alt 
+            let overlayPhotgraphElement = this._overlayElement.querySelector(".photograph");
+            overlayPhotgraphElement.setAttribute("src", galleryItemElement.getAttribute("href"));
 
-            // Helper function for building featured people and attribution tags
-            function appendLinkToElement(element, text, url) {
-                if (url) {
-                    $(element).append("<a href='" + url + "'>" + text + "</a>");
-                }
-                else {
-                    $(element).append("<div>" + text + "</div>");
-                }
+            let itemImgElement = galleryItemElement.querySelector("img");
+            overlayPhotgraphElement.setAttribute("alt", itemImgElement.getAttribute("alt"));
+
+            let overlayFeaturedElement = this._overlayElement.querySelector(".featured");
+            let itemFeaturedElement = galleryItemElement.parentElement.querySelector(".featured");
+            if (itemFeaturedElement) {
+                $(overlayFeaturedElement).replaceWith($(itemFeaturedElement).clone(true, true));
             }
-            
-            // Set the list of people in the photograph
-            $(featuredElement).empty();
-            let featured = $(galleryItemElement).data("featured");
-            if (featured) {
-                $(featuredElement).append("<h3>Pictured</h3>");
-                $.each(featured, function(key, value) {
-                    appendLinkToElement(featuredElement, key, value);
-                });
-            }
-            
-            // Set the attribution
-            $(attributionElement).empty();
-            let attribution = $(galleryItemElement).data("attribution");
-            if (attribution) {
-                $(attributionElement).append("<h3>Credit</h3>");
-                appendLinkToElement(attributionElement, attribution["name"], attribution["url"]);
+            else {
+                $(overlayFeaturedElement).empty();
             }
 
-            this._galleryItemElement = galleryItemElement;
+            let overlayAttributionElement = this._overlayElement.querySelector(".attribution");
+            let itemAttributionElement = galleryItemElement.parentElement.querySelector(".attribution");
+            if (itemAttributionElement) {
+                $(overlayAttributionElement).replaceWith($(itemAttributionElement).clone(true, true));
+            }
+            else {
+                $(overlayAttributionElement).empty();
+            }
+
             this._overlayElement.style.display = "block";
         }
 
         hideOverlay() {
             this._overlayElement.style.display = "none";
-            this._galleryItemElement = null;
         }
 
         // TODO disable scrolling
