@@ -16,9 +16,18 @@
                 {% if page.upcoming-show %}
                     <h2 class="show-dates">{{page.upcoming-show.dates}}</h2>
                     {% include venue.html show=page.upcoming-show %}
-                    <div class="description">{{ content }}</div>
-                    {% include castlist.html show=page.upcoming-show%}
+                    
                     {% include buytickets.html show=upcoming-performance.upcoming-show%}
+
+                    <div class="description">{{ content }}</div>
+
+                    <ul class="show-times">
+                    {% for showtime in upcoming-performance.upcoming-show.times %}
+                        <li>{{ showtime }}</li>
+                    {% endfor %}
+                    </ul>
+
+                    {% include castlist.html show=page.upcoming-show%}
                 {% else %}
                     <div class="description">{{ content }}</div>
                 {% endif %}

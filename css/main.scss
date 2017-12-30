@@ -37,6 +37,12 @@ header {
     text-align: center;
     padding: 1em 2em;
 }
+header a {
+    color: $text-black;
+}
+header a:hover {
+    color: $text-black;
+}
 header h1 {
     font-size: 3em;
     padding-bottom: 0;
@@ -72,6 +78,7 @@ nav li ul {
     text-align: left;
     overflow: visible;
     width: auto;
+    z-index: 10;
 }
 nav li:hover ul {
     display: block;
@@ -100,6 +107,9 @@ footer {
     align-items: center;
     justify-items: center;
     column-count: 3;
+}
+footer a {
+    color: $text-black;
 }
 footer > div {
     display: inline-block;
@@ -163,6 +173,7 @@ footer div {
 .teaser-video {
     margin: 0 auto;
     width: 70%;
+    padding-top: 2em;
 }
 
 .header-image img {
@@ -215,6 +226,23 @@ footer div {
     padding-top: 1.5em;
 }
 
+.show-times {
+    display: block;
+    width: 100%;
+    margin: 0 auto;    
+    padding-top: 1.4em;
+    padding-bottom: 0.6em;
+    text-align: center;
+}
+.show-times li {
+    display: inline-block;
+    margin: 0 auto;    
+    font-size: 1.17rem;
+    list-style: none;
+    font-weight: bold;
+    padding: 0 1em;
+}
+
 .cast-list {
     padding-left: 2em;
     padding-top: .4em;
@@ -244,8 +272,12 @@ footer div {
     content: ', ';
 }
 
+hr {
+    margin: 2em 7em 0 7em;
+}
+
 .two-columns {
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 .two-columns ul {    
     padding-top: 1em;

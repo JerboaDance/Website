@@ -9,15 +9,25 @@ title: Jerboa Dance - Performances
         <a href="{{upcoming-performance.url}}">
             <h1>{{ upcoming-performance.name }}</h1> 
             <h2>{{ upcoming-performance.upcoming-show.dates }}</h2>
-        </a>
-        
+        </a>        
         {% include venue.html show=upcoming-performance.upcoming-show %}
-        <div class="description">{{ upcoming-performance.content }}</div>
-        {% include castlist.html show=upcoming-performance.upcoming-show%}
+        
         {% include buytickets.html show=upcoming-performance.upcoming-show%}
+
+        <div class="description">{{ upcoming-performance.content }}</div>
+        
+        <ul class="show-times">
+        {% for showtime in upcoming-performance.upcoming-show.times %}
+            <li>{{ showtime }}</li>
+        {% endfor %}
+        </ul>
+        
+        {% include castlist.html show=upcoming-performance.upcoming-show%}
     </div>
     {% endif %}
     
+    <hr>
+
     <div class="two-columns">
         <h1>Prior Performances</h1>
         <ul>
