@@ -3,6 +3,29 @@ layout: default
 title: Jerboa Dance - modern. athletic. powerful
 permalink: /index.html
 ---
-<div class="teaser-video">
-    {% include youtube.html videoid="4CucKooBXLM" aspect-ratio="16x9" %}
+
+{% assign upcoming-performance = site.performances | where:"id", site.data.performances.upcoming | first %}
+{% if upcoming-performance %}        
+<div class="upcoming-performance">
+    <a href="{{upcoming-performance.url}}">
+        <h1>{{ upcoming-performance.name }}</h1> 
+        <h2>{{ upcoming-performance.upcoming-show.dates }}</h2>
+    </a>
+    
+    {% include venue.html show=upcoming-performance.upcoming-show %}
+
+    {% include buytickets.html show=upcoming-performance.upcoming-show%}
+
+    <div class="description">{{ upcoming-performance.content }}</div>
+
+    <ul class="show-times">
+    {% for showtime in upcoming-performance.upcoming-show.times %}
+        <li>{{ showtime }}</li>
+    {% endfor %}
+    </ul>
+
+    {% include castlist.html show=upcoming-performance.upcoming-show%}
+    
+    <div class="teaser-video">{% include youtube.html videoid="4CucKooBXLM" aspect-ratio="16x9" %}</div>
 </div>
+{% endif %}

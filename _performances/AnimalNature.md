@@ -1,7 +1,12 @@
 ---
 name: Animal Nature
 upcoming-show:
-    dates: February 9th, 10th, & 11th, 2018
+    dates: February 9th, 10th, 11th 2018
+    times:
+        - 2/9 8:00pm
+        - 2/10 2:00pm
+        - 2/10 8:00pm
+        - 2/11 7:30pm
     bpt-id: 3210871
     location: YawTheater
     company: [JaimeWaliczek, ChristinaJohnson, SeanCalavan, RenadoTozer, StellaKutz, AndresLopez, KarenBrown, ConstanzeVillines, AlexUng]
