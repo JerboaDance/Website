@@ -44,9 +44,11 @@ photographs:
         id: /assets/performances/AnimalNature/header.jpg
         featured: [RenadoTozer, AndresLopez]
 ---
-What is your inner animal? Join Jerboa Dance for a night of revelry, entertainment, exploration, humanity, and of course dancing. We will take you on a journey from the mystical to the political with a variety of acts showcasing amazing talent. There will be some of Jerboa's signature athletic and emotional style interspersed with live music, burlesque, and circus.
+Join Jerboa Dance for a night of revelry, entertainment, exploration, and humanity, taking you on a journey from the political to the mystical. 
+
+The show includes Jerboa’s signature athletic and emotional dance, and features special guests performing live music, circus, and burlesque. 
 
 VIP tickets include champagne, chocolate, front row seats, and more!
 
-Saturday matinee has been modified to be family-friendly.
-Friday and Saturday evening shows followed by an after-party with live-DJ.
+The Saturday matinee is family-friendly. 
+Friday and Saturday evening shows are followed by an after-party with live-DJ.
