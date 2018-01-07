@@ -9,7 +9,7 @@ upcoming-show:
         - 2/11 7:30pm
     bpt-id: 3210871
     location: YawTheater
-    company: [JaimeWaliczek, ChristinaJohnson, SeanCalavan, RenadoTozer, StellaKutz, AndresLopez, KarenBrown, ConstanzeVillines, AlexUng]
+    company: [JaimeWaliczek, ChristinaJohnson, SeanCalavan, RenadoTozer, StellaKutz, AndresLopez, KarenGrady, ConstanzeVillines, AlexUng]
     highlights:
         -
             name: Dustin Guy Jackson
