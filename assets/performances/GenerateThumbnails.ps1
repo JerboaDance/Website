@@ -1,22 +1,42 @@
+param(
+    [switch]$force
+)
+function Resize-Image {
+    param(
+        $originalImagePath,
+        $smallImageWidth,
+        $force
+    )
+    
+    $smallImageName = $originalImagePath.BaseName + ".small.jpg"
+    $smallImagePath = join-path $originalImagePath.DirectoryName  $smallImageName
+
+    $originalImage = [System.Drawing.Image]::FromFile($originalImagePath)
+    $aspectRatio = $originalImage.height / $originalImage.width
+    $smallImageHeight = $smallImageWidth*$aspectRatio
+
+    if ($force -or ($smallImageHeight -lt $originalImage.height -and $smallImageWidth -lt $originalImage.width)) {
+        $smallImage = New-Object System.Drawing.Bitmap($smallImageWidth, $smallImageHeight)
+        $smallImageCanvas = [System.Drawing.Graphics]::FromImage($smallImage)
+        $smallImageCanvas.DrawImage($originalImage, 0, 0, $smallImageWidth, $smallImageHeight)
+        $smallImage.Save($smallImagePath)
+        $smallImage.Dispose()
+    } else {
+        $originalImage.Save($smallImagePath)
+    }
+    
+    $originalImage.Dispose()
+}
+
 get-childitem *.jpg -Recurse | ForEach-Object {
-    if ($_.BaseName -ne "header" -and -not $_.FullName.EndsWith(".small.jpg") )
-    {
-        $smallName = $_.BaseName + ".small.jpg"
-        $smallPath = join-path $_.DirectoryName  $smallName
-
-        $fullImage = [System.Drawing.Image]::FromFile($_);
-        $aspectRatio = $fullImage.height / $fullImage.width;
-        $smallWidth = 350;
-        $smallHeight = $smallWidth*$aspectRatio;
-
-        if ($smallHeight -lt $fullImage.height -and $smallWidth -lt $fullImage.width) {
-            $smallImage = $fullImage.GetThumbnailImage($smallWidth, $smallHeight, $null, [intptr]::Zero);
-            $smallImage.Save($smallPath );
-            $smallImage.Dispose();
-        } else {
-            $fullImage.Save($smallPath );
+    if (-not $_.FullName.EndsWith(".small.jpg")) {
+        if ($_.BaseName -eq "header" ) {
+            $smallImageWidth = 900
         }
-        
-        $fullImage.Dispose();
+        else {
+            $smallImageWidth = 270
+        }
+
+        Resize-Image $_ $smallImageWidth -force:$force
     }
 }

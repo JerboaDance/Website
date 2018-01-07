@@ -4,7 +4,7 @@ prior-shows:
     -
         dates: Jun 24th & 25th, 2016
         location: EriksonTheater
-        company: [JaimeWaliczek, MeghanShepard, SarahChampion, StellaKutz, RenadoTozer, AndreasFetz, AlexUng, KarenBrown]
+        company: [JaimeWaliczek, MeghanShepard, SarahChampion, StellaKutz, RenadoTozer, AndreasFetz, AlexUng, KarenGrady]
         highlights: 
             -
                 name: Jaime Waliczek

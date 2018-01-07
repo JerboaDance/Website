@@ -9,7 +9,7 @@ upcoming-show:
         - 2/11 7:30pm
     bpt-id: 3210871
     location: YawTheater
-    company: [JaimeWaliczek, ChristinaJohnson, SeanCalavan, RenadoTozer, StellaKutz, AndresLopez, KarenBrown, ConstanzeVillines, AlexUng]
+    company: [JaimeWaliczek, ChristinaJohnson, SeanCalavan, RenadoTozer, StellaKutz, AndresLopez, KarenGrady, ConstanzeVillines, AlexUng]
     highlights:
         -
             name: Dustin Guy Jackson
@@ -36,6 +36,10 @@ upcoming-show:
             role: Burlesque
             url: "/company/AndresLopez.html"
         -
+            name: Andrew Scott
+            role: Drag Queen
+            url: "https://www.facebook.com/andrew.scott.90813236"
+        -
             name: AJ Rogers
             role: Acrobat
             url: "http://www.omculture.com/wallingford-class-descriptions"
@@ -44,11 +48,10 @@ photographs:
         id: /assets/performances/AnimalNature/header.jpg
         featured: [RenadoTozer, AndresLopez]
 ---
-Join Jerboa Dance for a night of revelry, entertainment, exploration, and humanity, taking you on a journey from the political to the mystical. 
+Jerboa Dance presents an evening of revelry and sensuality, journeying from political to mystical. Acts feature Jerboa’s signature athletic and emotional style. Special guests include live music, circus arts, burlesque, and more. Friday and Saturday evening shows followed by live DJs.
 
-The show includes Jerboa’s signature athletic and emotional dance, and features special guests performing live music, circus, and burlesque. 
+**VIP tickets $50 presale, $60 at the door**  
+Front row seats, champagne, and chocolate included
 
-VIP tickets include champagne, chocolate, front row seats, and more!
-
-The Saturday matinee is family-friendly. 
-Friday and Saturday evening shows are followed by an after-party with live-DJ.
+**GA tickets $25 presale, $30 at the door**  
+$5 kids’ tickets for the family-friendly Saturday matinee
