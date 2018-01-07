@@ -53,5 +53,5 @@ Jerboa Dance presents an evening of revelry and sensuality, journeying from poli
 **VIP tickets $50 presale, $60 at the door**  
 Front row seats, champagne, and chocolate included
 
-**GA tickets $25 presale, $30 at the door** 
+**GA tickets $25 presale, $30 at the door**  
 $5 kids’ tickets for the family-friendly Saturday matinee
