@@ -26,15 +26,17 @@ upcoming-show:
             name: Sebastian Lange and Maja Zavaljevski
             role: Musicians
         -
+            name: Christina Johnson
+            role: Burlesque
+        -
             name: Emma Curtiss
             role: Circus Performer
         -
             name: Brandon Milner
             role: Musician
         -
-            name: Andr&eacute;s Lopez
+            name: Gypsy Leo
             role: Burlesque
-            url: "/company/AndresLopez.html"
         -
             name: Andrew Scott
             role: Drag Queen
