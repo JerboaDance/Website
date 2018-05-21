@@ -50,7 +50,7 @@ photographs:
         id: /assets/performances/AnimalNature/header.jpg
         featured: [RenadoTozer, AndresLopez]
 ---
-Jerboa Dance presents an evening of revelry and sensuality, journeying from political to mystical. Acts feature Jerboa’s signature athletic and emotional style. Special guests include live music, circus arts, burlesque, and more. Friday and Saturday evening shows followed by live DJs.
+Jerboa Dance presented an evening of revelry and sensuality, journeying from political to mystical. Acts featured Jerboa’s signature athletic and emotional style. Special guests included live music, circus arts, burlesque, and more. Friday and Saturday evening shows were followed by live DJs.
 
 **VIP tickets $50 presale, $60 at the door**  
 Front row seats, champagne, and chocolate included
