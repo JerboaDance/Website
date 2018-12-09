@@ -3,7 +3,6 @@ layout: default
 title: Jerboa Dance - modern. athletic. powerful
 permalink: /index.html
 ---
-
 {% assign upcoming-performance = site.performances | where:"id", site.data.performances.upcoming | first %}
 {% if upcoming-performance %}        
 <div class="upcoming-performance">
@@ -27,11 +26,14 @@ permalink: /index.html
     {% include castlist.html show=upcoming-performance.upcoming-show%}
 </div>
 {% endif %}
-<div class="festival-description">
-    <h1><a href="https://newyearliftoff.brownpapertickets.com/">New Year Lift Off</a></h3>
-    <ul class="show-times"><li>January 19th, 2019 at 7:30pm</li></ul>
+
+<div class="upcoming-performance">
+    <a href="https://newyearliftoff.brownpapertickets.com/">
+        <h1>New Year Lift Off</h1><h2>January 19th, 2019 at 7:30pm</h2>
+    </a>
     <p>
         Jerboa Dance will be performing in the New Year Lift Off, an evening of dance and delights to benefit the new nonprofit, Pitch+Roll Productions, dedicated to bringing more opportunities for choreographers and dancers to the Seattle community. Tickets are available from <a href="https://newyearliftoff.brownpapertickets.com/">Brown Paper Tickets</a>.
     </p>
 </div>
+
 <div class="teaser-video">{% include youtube.html videoid="4CucKooBXLM" aspect-ratio="16x9" %}</div>

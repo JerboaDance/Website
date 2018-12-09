@@ -18,7 +18,7 @@ upcoming-show:
             role: Choreographer
             url: "/company/JaimeWaliczek.html"
         -
-            name: Thomas Phelan
+            name: TomTom The Phenomenon
             role: Burlesque
         -
             name: Hannah Duffy - @hannahduffymusic on Facebook, YouTube, and Instagram
@@ -32,9 +32,9 @@ photographs:
         id: /assets/performances/AnimalNature/header.jpg
         featured: [RenadoTozer, AndresLopez]
 ---
-Join us for a night of celebration, entertainment, and physicality. We will dazzle you with dance, music, acrobatics, circus, and burlesque. Jerboa will take you on a journey from the jazz club to the apocalypse and tackle themes like the abuse of power and gender identity. Come embrace life in all its weirdness with these fantastic performers.
+Jerboa delights with another cabaret filled with entertainment and physicality. We will dazzle you with dance, music, acrobatics, circus, and burlesque. Join us on a journey from the jazz club to the apocalypse while we explore power and gender. Come embrace life in all its weirdness with these fantastic performers.
 
-All the evening performances will be followed by a jazz and swing afterparty so stay to meet the performers and dance.
+All evening performances will be followed by a jazz and swing afterparty so stay to meet the performers and dance.
 
 **VIP tickets $50 presale, $60 at the door**  
 Front row seats, champagne, and chocolate included
