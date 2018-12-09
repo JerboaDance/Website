@@ -7,9 +7,8 @@ upcoming-show:
         - 2/15 8:00pm
         - 2/16 2:00pm
         - 2/16 8:00pm
-    [//]: # bpt-id: 3210871
     location: YawTheater
-    company: [ShannonAdams, SarahChampion, StellaKutz, Phenix Laughlin, Chelsea Reinschmidt, AlexandraSipe, JaimeWaliczek, WarrenWoo]
+    company: [ShannonAdams, SarahChampion, StellaKutz, PhenixLaughlin, ChelseaReinschmidt, AlexandraSipe, JaimeWaliczek, WarrenWoo]
     highlights:
         -
             name: Thomas Phelan
@@ -21,9 +20,6 @@ upcoming-show:
         -
             name: Thomas Phelan
             role: Burlesque
-        -
-            name: 
-            role: Circus Performer
         -
             name: Hannah Duffy - @hannahduffymusic on Facebook, YouTube, and Instagram
             role: Musician
