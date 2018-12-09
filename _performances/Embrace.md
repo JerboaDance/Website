@@ -1,5 +1,5 @@
 ---
-name: Embrace - a Cabaret
+name: Embrace
 upcoming-show:
     dates: February 14th, 15th, 16th 2019
     times:

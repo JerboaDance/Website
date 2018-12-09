@@ -5,7 +5,7 @@
     <li>
         <h3>Company</h3>
         <ul class="company-list">
-            {% assign sorted-company= include.show.company | sort %}
+            {% assign sorted-company= include.show.company | reverse | sort  %}
             {% for person-id in sorted-company %}
                 {% capture personpath %}/company/{{person-id}}{% endcapture %}
                 {% assign person = site.company | where: "id", personpath | first %}
