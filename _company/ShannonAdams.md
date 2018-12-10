@@ -1,0 +1,7 @@
+---
+name: Shannon Adams
+status: active
+---
+Shannon comes from Salt Lake City, Utah.  She is a lover of all forms of dance and has been trained in Korean folk dance, jazz, ballet, tap, and modern.  She has also studied at the EDGE Dance studio, Performing Dance Center, Broadway Dance Center, Steps on Broadway, Dancespace/Dance New Amsterdam, Joffrey Ballet School, Parson’s Dance Company Summer Program, and American Dance Festival.  Training at The School at Jacob’s Pillow Jazz Program brought the opportunity to work with such legends as Chet Walker, Patti Wilcox, Luigi, and Matt Mattox.  Mrs. Adams graduated Cum Laude in 2004 from the University of Utah with a BFA in Modern Dance. She was the recipient of two Elizabeth R. Hayes scholarships, as well as the Kennecott Scholars scholarship.  At the University of Utah, she had the fortunate opportunity to study with Abby Fiat, Donna White, Steve Koester, Brent Schneider, Tandy Beal, Jon Scoville, Kaye Richards, Pamela Geber, and Eric Handman.  Shannon was also a guest performer with Utah Ballet, and she performed in Performing Dance Company working with such choreographers as Ronald K. Brown, Doug Elkins, and David Dorfman.  
+
+Shannon has a great love and passion for teaching. She has taught and choreographed for various studios and high-schools in Utah, Texas and in the Seattle area.  Outside of Shannon’s voracious appetite for all things dance, she is seen chasing her three kids, spending time with family, eating good food, people watching, and going to live music concerts.  
