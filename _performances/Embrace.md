@@ -19,8 +19,8 @@ upcoming-show:
             role: Choreographer
             url: "/company/JaimeWaliczek.html"
         -
-            name: TomTom The Phenomenon
-            role: Burlesque
+            name: Emma Curtiss
+            role: Cyr wheel
         -
             name: Hannah Duffy - @hannahduffymusic on Facebook, YouTube, and Instagram
             role: Musician
@@ -28,6 +28,9 @@ upcoming-show:
             name: AJ Rogers
             role: Acrobat
             url: "http://www.omculture.com/wallingford-class-descriptions"
+        -
+            name: TomTom The Phenomenon
+            role: Burlesque    
 photographs:
     -
         id: /assets/performances/AnimalNature/header.jpg
