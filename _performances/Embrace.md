@@ -14,6 +14,7 @@ upcoming-show:
         -
             name: Thomas Phelan
             role: Master of Ceremonies
+            url: "/company/ThomasPhelan.html"
         -
             name: Jaime Waliczek
             role: Choreographer
