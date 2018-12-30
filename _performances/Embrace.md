@@ -14,20 +14,25 @@ upcoming-show:
         -
             name: Thomas Phelan
             role: Master of Ceremonies
+            url: "/company/ThomasPhelan.html"
         -
             name: Jaime Waliczek
             role: Choreographer
             url: "/company/JaimeWaliczek.html"
         -
-            name: Emma Curtiss
-            role: Cyr wheel
-        -
-            name: Hannah Duffy - @hannahduffymusic on Facebook, YouTube, and Instagram
-            role: Musician
-        -
             name: AJ Rogers
             role: Acrobat
             url: "http://www.omculture.com/wallingford-class-descriptions"
+        -
+            name: Emma Curtiss
+            role: Cyr wheel
+        -
+            name: Hannah Duffy
+            role: Musician
+            url: https://www.facebook.com/hannahduffymusic
+        -
+            name: Noelle Price
+            role: Spoken Word
         -
             name: TomTom The Phenomenon
             role: Burlesque    

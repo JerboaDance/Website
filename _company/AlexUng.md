@@ -1,6 +1,5 @@
 ---
 name: Alex Ung
-status: active
 ---
 In his second year with JERBOA Dance, Alex Ung is giddy to be in his first burlesque show. A hip hop
 dancer turned contemporary/modern, Alex started his career in college as a hip hop
