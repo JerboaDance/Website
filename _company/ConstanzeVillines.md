@@ -1,6 +1,5 @@
 ---
 name: Constanze Villines
-status: active
 ---
 Constanze Villines trained at SVN, Tanzprojekt, as well as the Munich Opera
 dance academy (Bosl Stiftung) until age eleven. She then expanded her dance
