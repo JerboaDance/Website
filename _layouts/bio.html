@@ -14,7 +14,10 @@
                     {% unless headshot %}
                         {% assign headshotpath = "/assets/company/default.png" %}
                     {% endunless %}
-                    <div class="bio-image"><img src="{{headshotpath}}" alt="{{ page.name }}" /></div>
+                    <div class="bio-image">
+                        <img src="{{headshotpath}}" alt="{{ page.name }}" />
+                        {% if page.photo-credit %}<p>Photo credit: {{ page.photo-credit }}</p>{% endif %}
+                    </div>
                     
                     <div class="bio-title">
                         <h1>{{ page.name }}</h1>
