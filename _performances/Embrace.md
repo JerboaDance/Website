@@ -33,6 +33,7 @@ upcoming-show:
         -
             name: Noelle Price
             role: Spoken Word
+            url: https://www.pricearts.co/copy-of-about
         -
             name: TomTom The Phenomenon
             role: Burlesque    
