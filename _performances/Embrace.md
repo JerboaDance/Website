@@ -9,7 +9,7 @@ upcoming-show:
         - 2/16 8:00pm
     bpt-id: 3922211
     location: YawTheater
-    company: [ShannonAdams, SarahChampion, StellaKutz, PhenixLaughlin, ChelseaReinschmidt, AlexandraSipe, JaimeWaliczek, WarrenWoo]
+    company: [ShannonAdams, StellaKutz, PhenixLaughlin, ChelseaReinschmidt, AlexandraSipe, JaimeWaliczek, WarrenWoo]
     highlights:
         -
             name: Thomas Phelan
