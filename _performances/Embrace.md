@@ -26,6 +26,7 @@ upcoming-show:
         -
             name: Emma Curtiss
             role: Cyr wheel
+            url: "/company/EmmaCurtiss.html"
         -
             name: Hannah Duffy
             role: Musician
