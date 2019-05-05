@@ -26,3 +26,5 @@ Photo credit: Warren Woo
 
 **GA tickets $18 presale, $25 at the door**  
 Sunday matinee is pay-what-you-can
+
+**Youth tickets $9 presale, $12 at the door**
