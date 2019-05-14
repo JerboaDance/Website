@@ -1,7 +1,7 @@
 ---
 name: RECONSTRUCT
 upcoming-show:
-    dates: May 21st - June 2nd 2019
+    dates: May 31st - June 2nd 2019
     times:
         - 5/31 7:30pm
         - 6/1 7:30pm
