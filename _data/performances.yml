@@ -1,5 +1,6 @@
-upcoming: "/performances/reconstruct"
+upcoming: "/performances/Moxie"
 prior: 
+  - "/performances/reconstruct"
   - "/performances/AnimalNature"
   - "/performances/continuum"
   - "/performances/Embrace"
