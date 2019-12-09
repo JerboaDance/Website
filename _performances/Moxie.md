@@ -1,7 +1,7 @@
 ---
 name: Moxie
 upcoming-show:
-    dates: February 14th, 15th, 21st, 22nd 2019
+    dates: February 14th, 15th, 21st, 22nd 2020
     times:
         - 2/14 7:30pm
         - 2/15 4:00pm
