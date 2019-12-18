@@ -9,7 +9,7 @@ upcoming-show:
         - 2/21 7:30pm
         - 2/22 7:30pm
     location: YawTheater
-    company: [LauranDrackatt, AnjaKellnerRogers, StellaKutz, GabeMaddox, LaurenSlater, ConstanzeVillines, JaimeWaliczek, WarrenWoo]
+    company: [LauranDrackett, AnjaKellnerRogers, StellaKutz, GabeMaddox, LaurenSlater, ConstanzeVillines, JaimeWaliczek, WarrenWoo]
     highlights:
         -
             name: Sean Calavan

@@ -1,5 +1,5 @@
 ---
-name: Lauran Drackatt
+name: Lauran Drackett
 status: active
 photo-credit: Warren Woo
 ---
