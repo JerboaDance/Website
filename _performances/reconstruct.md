@@ -1,14 +1,10 @@
 ---
 name: RECONSTRUCT
-upcoming-show:
-    dates: May 31st - June 2nd 2019
-    times:
-        - 5/31 7:30pm
-        - 6/1 7:30pm
-        - 6/2 2:00pm
-    bpt-id: 4223150
-    location: YawTheater
-    company: [StellaKutz, JaimeWaliczek] 
+prior-shows:
+    -
+        dates: May 31st - June 2nd 2019
+        location: YawTheater
+        company: [StellaKutz, JaimeWaliczek] 
 photographs:
     -
         id: /assets/performances/reconstruct/header.jpg

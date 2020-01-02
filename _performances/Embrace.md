@@ -1,43 +1,38 @@
 ---
 name: Embrace
-upcoming-show:
-    dates: February 14th, 15th, 16th 2019
-    times:
-        - 2/14 8:00pm
-        - 2/15 8:00pm
-        - 2/16 2:00pm
-        - 2/16 8:00pm
-    bpt-id: 3922211
-    location: YawTheater
-    company: [ShannonAdams, StellaKutz, ConstanzeVillines, ChelseaReinschmidt, AlexandraSipe, JaimeWaliczek, WarrenWoo]
-    highlights:
-        -
-            name: Thomas Phelan
-            role: Master of Ceremonies
-            url: "/company/ThomasPhelan.html"
-        -
-            name: Jaime Waliczek
-            role: Choreographer
-            url: "/company/JaimeWaliczek.html"
-        -
-            name: AJ Rogers
-            role: Acrobat
-            url: "http://www.omculture.com/wallingford-class-descriptions"
-        -
-            name: Emma Curtiss
-            role: Cyr wheel
-            url: "/company/EmmaCurtiss.html"
-        -
-            name: Hannah Duffy
-            role: Musician
-            url: https://www.facebook.com/hannahduffymusic
-        -
-            name: Noelle Price
-            role: Spoken Word
-            url: https://www.pricearts.co/copy-of-about
-        -
-            name: TomTom The Phenomenon
-            role: Burlesque    
+prior-shows:
+    -
+        dates: February 14th, 15th, 16th 2019
+        location: YawTheater
+        company: [ShannonAdams, StellaKutz, ConstanzeVillines, ChelseaReinschmidt, AlexandraSipe, JaimeWaliczek, WarrenWoo]
+        highlights:
+            -
+                name: Thomas Phelan
+                role: Master of Ceremonies
+                url: "/company/ThomasPhelan.html"
+            -
+                name: Jaime Waliczek
+                role: Choreographer
+                url: "/company/JaimeWaliczek.html"
+            -
+                name: AJ Rogers
+                role: Acrobat
+                url: "http://www.omculture.com/wallingford-class-descriptions"
+            -
+                name: Emma Curtiss
+                role: Cyr wheel
+                url: "/company/EmmaCurtiss.html"
+            -
+                name: Hannah Duffy
+                role: Musician
+                url: https://www.facebook.com/hannahduffymusic
+            -
+                name: Noelle Price
+                role: Spoken Word
+                url: https://www.pricearts.co/copy-of-about
+            -
+                name: TomTom The Phenomenon
+                role: Burlesque    
 photographs:
     -
         id: /assets/performances/AnimalNature/header.jpg
